@@ -17,6 +17,9 @@
   padding: 18px 0;
   color: #fff;
 }
+.titletext span{
+  color:#fff;
+}
 .xbox {
   position: relative;
   right: 10px;
@@ -46,11 +49,11 @@
   align-self: center;
   font-size: 18px;
   line-height: 18px;
-  font-weight: bold;
-  margin-left: 20px;
-  margin-right: 23px;
+  font-weight: 700;
+  margin: 0 20px;
   text-align: center;
   width:100px;
+  color:#333;
 }
 .uploadBtn{
   font-size: 18px;
@@ -85,4 +88,7 @@
   font-size: 18px;
   font-weight: bold;
   border-radius: 9px;
+}
+.submitBtn span{
+  color:#fff;
 }

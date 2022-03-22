@@ -57,8 +57,8 @@ function Send({send, children, onClose}){
                             <li><strong>참여포인트 : </strong> 100pt</li>
                             <li>
                                 <span><strong>설문기간 </strong></span>
-                                <label></label>
-                                <input type="date" /> ~ <input type="date" />
+                                <label for=""></label>
+                                <input type="date" /> <span className={styles.andtxt}> ~ </span> <input type="date" />
                             </li>
                             <li><strong>발송패널 수 : </strong> 2,500건</li>
                             <li>
