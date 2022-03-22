@@ -1,6 +1,6 @@
 /* 타이틀 박스 */
 .registerArea {
-  width: 1200px;
+  width: 880px;
   margin: auto;
   color: #333;
 }
@@ -14,7 +14,7 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
-  padding: 29px 0 25px;
+  padding: 29px 0 25px 70px;
 }
 .xbox {
   background-color: #fff;

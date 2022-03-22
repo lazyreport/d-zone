@@ -24,7 +24,7 @@ function Main_live() {
       const onIntersect =  (entrys, observer) => {
         entrys.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('active');
+                entry.target.classList.add('fadeActive');
                 observer.unobserve(entry.target); // 관찰 취소
             }
         });

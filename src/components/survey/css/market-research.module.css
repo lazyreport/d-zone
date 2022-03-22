@@ -1,6 +1,10 @@
 /* top */
+.researchWrapper{
+  max-width: 1200px;
+  margin: auto;
+}
 .marketResearch {
-  width: 100vw;
+  width: 100%;
   margin: 53px auto 126px;
 }
 .toparea {

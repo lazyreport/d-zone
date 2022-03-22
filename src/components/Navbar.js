@@ -57,7 +57,7 @@ function Navbar() {
             </li>
 
             <li className="nav-item">
-              <Button buttonStyle={click ? "btn--primary" : "btn--outline"}>
+              <Button buttonStyle={click ? "btn--primary" : "btn--navbar"} buttonSize="btn--large-outline">
                 <Link
                   to="/FAQ"
                   onClick={closeMobileMenu}
@@ -68,7 +68,7 @@ function Navbar() {
               </Button>
             </li>
             <li className="nav-item">
-              <Button buttonStyle="btn--gradient">
+              <Button buttonStyle="btn--gradient" buttonSize="btn--large">
                 <Link
                   to="/log-in"
                   onClick={closeMobileMenu}
