@@ -128,8 +128,8 @@ input:focus {
 .uploadButton{
   font-size: 16px;
   background-color: #fff;
-  width: 250px;
-  outline: none;
+  width:250px;
+  outline:none;
 }
 ::-webkit-file-upload-button{
   color:#fff;
@@ -137,7 +137,7 @@ input:focus {
   padding: 10px;
   border-radius: 10px;
   border: none;
-  outline: none;
+  outline:none;
 }
 .dl4 p {
   font-size: 16px;
