@@ -7,12 +7,14 @@ import Register from './Register';
 import Send from './Send';
 import '../../reset.css';
 import { Link, NavLink } from "react-router-dom";
+import FadeIn from 'react-fade-in';
 
 
 function Survey(){
   const [isOpen, setIsOpen] = useState(false);
   const [isSend, setIsSend] = useState(false);
     return( 
+      <FadeIn>
       <div className={styles.surveyArea}>
         <div className={styles.topbar}>
           <h2>설문등록 현황조회</h2>
@@ -198,6 +200,7 @@ function Survey(){
             </a>
           </section>
       </div>
+      </FadeIn>
     )
 }
 
