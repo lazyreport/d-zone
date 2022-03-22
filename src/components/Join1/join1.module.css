@@ -101,6 +101,7 @@
 }
 .checkBox > ul > li {
   float: left;
+  text-align: left;
 }
 .checkBox > ul > li:first-child {
   width: 85%;

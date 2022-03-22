@@ -136,7 +136,7 @@
 .Join2_1 table th {
   width: 200px;
   text-align: left;
-  text-indent: 5px;
+  text-indent: 50px;
   font-size: 17px;
 }
 
@@ -148,12 +148,12 @@
 .Join2_1 table td {
   padding-left: 20px;
 }
-.s .chk_member {
+.Join2_1 .s .chk_member {
   margin-left: 20px;
 }
 
 /* eye-btn */
-.eye-btn {
+.eye_btn {
   display: block;
   width: 50px;
   height: 36px;

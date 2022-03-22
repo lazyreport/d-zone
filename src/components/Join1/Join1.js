@@ -10,9 +10,9 @@ function Join1() {
         <div className={styles.inner_box}>
           <div className={styles.step_box}>
               <ul>
-                <li>Step1. 약관 동의<img src="img/step1.jpg" alt="동의" /></li>
+                <li className={styles.on}>Step1. 약관 동의<img src="img/step1.jpg" alt="동의" /></li>
                 <li>Step2. 정보 입력<img src="img/step2.png" alt="입력" /></li>
-                <li className={styles.on}>Step3. 가입 완료<img src="img/step3.png" alt="완료" /></li>
+                <li>Step3. 가입 완료<img src="img/step3.png" alt="완료" /></li>
               </ul>
           </div>
 
