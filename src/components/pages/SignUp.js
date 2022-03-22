@@ -1,17 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink, Link } from "react-router-dom";
 import styles from '../Join1/join1.module.css';
 
 export default function SignUp() {
+
+  const [checkedButtons, setCheckedButtons] = useState([]);
+
+  const changeHandler = (checked, id) => {
+    if (checked) {
+      setCheckedButtons([...checkedButtons, id]);
+      console.log("체크 반영 완료");
+    } else {
+      setCheckedButtons(checkedButtons.filter(button => button !== id));
+      console.log("체크 해제 반영 완료");
+    }
+  };
+
+  const isAllChecked = checkedButtons.length === 2;
+  const disabled = !isAllChecked;
+
+
   return (
     <div className={styles.Join1}>
       <main>
         <div className={styles.inner_box}>
           <div className={styles.step_box}>
               <ul>
-                <li>Step1. 약관 동의<img src="img/step1.jpg" alt="동의" /></li>
+                <li className={styles.on}>Step1. 약관 동의<img src="img/step1.jpg" alt="동의" /></li>
                 <li>Step2. 정보 입력<img src="img/step2.png" alt="입력" /></li>
-                <li className={styles.on}>Step3. 가입 완료<img src="img/step3.png" alt="완료" /></li>
+                <li>Step3. 가입 완료<img src="img/step3.png" alt="완료" /></li>
               </ul>
           </div>
 
@@ -22,7 +39,11 @@ export default function SignUp() {
                       <ul className="clearfix">
                           <li>이용약관<span>(*필수)</span></li>
                           <li className={styles.checkBtn}>
-                              <input type="checkbox" name="chk" /> 동의합니다.
+                              <input type="checkbox" name="chk" 
+                              onChange={e => {
+                                changeHandler(e.currentTarget.checked, 'check');
+                              }}
+                              checked={checkedButtons.includes('check') ? true : false} /> 동의합니다.
                           </li>
                       </ul>
                       <textarea name="" id="">여러분을 환영합니다.
@@ -35,7 +56,11 @@ export default function SignUp() {
                       <ul className="clearfix">
                           <li>개인정보 수집 및 이용에 대한 안내<span>(*필수)</span></li>
                           <li className={styles.checkBtn}>
-                              <input type="checkbox" name="chk" /> 동의합니다.
+                              <input type="checkbox" name="chk" 
+                              onChange={e => {
+                                changeHandler(e.currentTarget.checked, 'check2');
+                              }}
+                              checked={checkedButtons.includes('check2') ? true : false} /> 동의합니다.
                           </li>
                       </ul>
 
