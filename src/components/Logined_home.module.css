@@ -1,11 +1,11 @@
-main {
+.logined_home {
   width: fit-content;
   min-height: calc(100vh - 221px);
   margin: 68px auto 147px auto;
 }
 
 /* container */
-.container {
+.logined_home .container {
   width: 1080px;
   margin: auto;
   display: flex;
@@ -14,7 +14,7 @@ main {
 }
 
 /* describe */
-.describe {
+.logined_home .describe {
   background-color: #ff7a3d;
   height: 68px;
   display: flex;
@@ -25,86 +25,87 @@ main {
   font-weight: 500;
   padding: 0 70px 0 95px;
 }
-.describe .title {
+.logined_home .describe .title {
   margin-right: 5px;
 }
-.describe .case {
+.logined_home .describe .case {
   font-size: 24px;
   font-weight: bold;
 }
-.describe .surveyWill img,
-.describe .surveyEd img {
+.logined_home .describe .surveyWill .img,
+.logined_home .describe .surveyEd .img {
   margin-right: 19px;
 }
-.describe .surveyIng img {
+.logined_home .describe .surveyIng .img {
   margin-right: 31px;
 }
 
 /* survey-box */
-.surveyBox {
+.logined_home .surveyBox {
   margin-top: 61px;
   width: 100%;
 }
 
 /* survey-box radio-box */
-.radioBox {
+.logined_home .radioBox {
   display: flex;
   justify-content: flex-end;
 }
-.radioBox input {
+.logined_home .radioBox .input {
   margin-right: 6px;
   cursor: pointer;
 }
-.radioBox label {
+.logined_home .radioBox .label {
+  display: block;
   font-size: 17px;
   font-weight: bold;
   cursor: pointer;
 }
-.radioBox .checkWill,
-.radioBox .checkIng {
+.logined_home .radioBox .checkWill,
+.logined_home .radioBox .checkIng {
   margin-right: 40px;
 }
 
 /* survey-box table-box */
-.tableBox {
+.logined_home .tableBox {
   margin-top: 24px;
 }
-.tableBox table {
+.logined_home .tableBox .table {
   width: 100%;
   border-bottom: 1px solid #b1b1b1;
   border-collapse: collapse;
 }
-.tableBox thead {
+.logined_home .tableBox .thead {
   height: 45px;
   background-color: #525c68;
   color: #fff;
   font-size: 17px;
 }
-.tableBox th {
+.logined_home .tableBox .th {
   border-right: 1px solid #fff;
   padding: 13px 0 15px 0;
 }
-.tableBox th:last-child {
+.logined_home .tableBox .th:last-child {
   border-right: none;
 }
-.tableBox tbody tr {
+.logined_home .tableBox .tbody .tr {
   border-bottom: 1px solid #333;
 }
-.tableBox tbody tr:last-child {
+.logined_home .tableBox .tbody .tr:last-child {
   border-bottom: 1px solid #b1b1b1;
 }
-.tableBox tbody td {
+.logined_home .tableBox .tbody .td {
   padding: 23px;
   font-size: 17px;
   font-weight: 500;
   color: #333;
   text-align: center;
 }
-.tableBox tbody tr td:nth-child(2) a:hover{
+.logined_home .tableBox .tbody .tr .td:nth-child(2) .a:hover{
   color: red;
   cursor: pointer;
 }
-.tableBox tbody .state span {
+.logined_home .tableBox .tbody .state .span {
   border: 1px solid #f0932b;
   border-radius: 5px;
   color: #f0932b;
@@ -115,7 +116,7 @@ main {
 
 /* qnaBox의 pagination */
 /* controllerBox */
-.controllerBox {
+.logined_home .controllerBox {
   margin: 20px auto;
   line-height: 20px;
   padding: 10px;
@@ -123,14 +124,14 @@ main {
   display: flex;
   justify-content: space-between;
 }
-.controllerBox a {
+.logined_home .controllerBox .a {
   display: block;
   margin-right: 10px;
 }
-.controllerBox a:hover{
+.logined_home .controllerBox a:hover{
   color: #ff7a3d;
 }
-.controllerBox .btn {
+.logined_home .controllerBox .btn {
   width: 20px;
   height: 20px;
   background-color: #ffc107;
@@ -139,7 +140,7 @@ main {
   line-height: 20px;
   font-size: 16px;
 }
-.controllerBox .btn:hover{
+.logined_home .controllerBox .btn:hover{
   background-color: #fff;
   color: #ffc107;
   border: 1px solid #ffc107;

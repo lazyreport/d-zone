@@ -46,7 +46,7 @@ function Loginbf_pannel3() {
   };
 
   return (
-    <main>
+    <main className={styles.loginbf_pannel3}>
       <FadeIn>
         <div>
           <h2 className={styles.pannelText}>패널인증시스템 신청</h2>

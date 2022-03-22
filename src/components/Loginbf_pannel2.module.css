@@ -1,10 +1,10 @@
-main {
+.loginbf_pannel2 {
   width: fit-content;
   min-height: calc(100vh - 221px);
   margin: 30px auto 108px auto;
 }
 
-.pannelText {
+.loginbf_pannel2 .pannelText {
   font-size: 27px;
   font-weight: 600;
   text-align: center;
@@ -12,7 +12,7 @@ main {
   color: #0c2461;
 }
 
-.pannelDes {
+.loginbf_pannel2 .pannelDes {
   text-align: center;
   display: block;
   margin-bottom: 46px;
@@ -21,7 +21,7 @@ main {
   line-height: 1.47;
 }
 
-.row {
+.loginbf_pannel2 .row {
   display: flex;
   height: 50px;
   line-height: 50px;
@@ -29,14 +29,15 @@ main {
   width: fit-content;
 }
 
-.row label {
+.loginbf_pannel2 .row .label {
+  display: block;
   width: 150px;
   padding-left: 10px;
   font-weight: bold;
   font-size: 20px;
 }
 
-.col input {
+.loginbf_pannel2 .col .input {
   width: 359px;
   height: 40px;
   font-size: 17px;
@@ -48,12 +49,12 @@ main {
   padding-bottom: 10px;
 }
 
-.col .phoneBox {
+.loginbf_pannel2 .col .phoneBox {
   width: 100px;
   height: 40px;
 }
 
-.col .hipen {
+.loginbf_pannel2 .col .hipen {
   display: inline-block;
   justify-items: center;
   margin-left: 9px;
@@ -65,43 +66,43 @@ main {
 }
 
 /* phoneRow & codeRow */
-.phoneRow input::-webkit-outer-spin-button,
-.phoneRow input::-webkit-inner-spin-button{
+.loginbf_pannel2 .phoneRow input::-webkit-outer-spin-button,
+.loginbf_pannel2 .phoneRow input::-webkit-inner-spin-button{
   -webkit-appearance: none;
 }
-.phoneRow .btn:hover,
-.codeRow .btn:hover {
+.loginbf_pannel2 .phoneRow .btn:hover,
+.loginbf_pannel2 .codeRow .btn:hover {
   background-color: #fff;
   color: #ffc107;
   border: 1.5px solid #ffc107;
 }
 
 /* btnContainer */
-.btnContainer {
+.loginbf_pannel2 .btnContainer {
   width: 700px;
   display: flex;
   justify-content: center;
   margin-top: 60px;
 }
-.btnContainer .btn:first-child {
+.loginbf_pannel2 .btnContainer .btn:first-child {
   background-color: #333;
 }
-.btnContainer .btn:first-child:hover{
+.loginbf_pannel2 .btnContainer .btn:first-child:hover{
   background-color: #fff;
   border: 1.5px solid #333;
   color: #333;
 }
-.btnContainer .btn:last-child {
+.loginbf_pannel2 .btnContainer .btn:last-child {
   background-color: #fff;
   border: 1.5px solid #333;
   color: #333;
 }
-.btnContainer .btn:last-child:hover{
+.loginbf_pannel2 .btnContainer .btn:last-child:hover{
   background-color: #333;
   color: #fff;
 }
 
-.btn {
+.loginbf_pannel2 .btn {
   width: 130px;
   height: 38px;
   cursor: pointer;
@@ -109,13 +110,13 @@ main {
   font-size: 17px;
 }
 
-button {
+.loginbf_pannel2 .button {
   background-color: #ffc107;
   border: none;
   border-radius: 5px;
   color: #fff;
 }
 
-.btnPrimary {
+.loginbf_pannel2 .btnPrimary {
   width: 170px;
 }

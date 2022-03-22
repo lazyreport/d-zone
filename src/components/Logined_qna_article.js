@@ -13,29 +13,29 @@ function Logined_qna_article() {
   return (
     <div>
       <Gnb />
-    <main>
+    <main className={styles.logined_qna_article}>
       <FadeIn>
       <div className={styles.container}>
           <div className={styles.articleWrap}>
             <div className={styles.pannelCategory}>
               <h2 className={styles.pannelTitle}>
-                Q&A <span>{">"}</span> Q&A 게시판
+                Q&A <span className={styles.span}>{">"}</span> Q&A 게시판
               </h2>
             </div>
             <div className={styles.article}>
               <table className={styles.table}>
                 <thead>
                   <tr>
-                    <th scope="col" className={styles.articleNum}>
+                    <th scope="col" className={`${styles.th} ${styles.articleNum}`}>
                       159
                     </th>
-                    <th scope="col" className={styles.articleTitle}>
+                    <th scope="col" className={`${styles.th} ${styles.articleTitle}`}>
                       Q&A 게시판
                     </th>
-                    <th scope="col" className={styles.articleWritter}>
+                    <th scope="col" className={`${styles.th} ${styles.articleWritter}`}>
                       홍길동
                     </th>
-                    <th scope="col" className={styles.articleDate}>
+                    <th scope="col" className={`${styles.th} ${styles.articleDate}`}>
                       2022.02.04
                     </th>
                   </tr>
@@ -43,14 +43,14 @@ function Logined_qna_article() {
               </table>
             </div>
             <div className={styles.content}>
-              <span>Q&A 게시판의 내용입니다.</span>
+              <span className={styles.span}>Q&A 게시판의 내용입니다.</span>
             </div>
             <div className={styles.comment}>
               <div className={styles.commentUserInfo}>
                 <img src="/img/qna_article_admin.png" alt="" />
-                <span className={styles.admin}>관리자</span>
-                <span className={styles.date}>2022-02-07</span>
-                <span className={styles.time}>09:02:25</span>
+                <span className={`${styles.span} ${styles.admin}`}>관리자</span>
+                <span className={`${styles.span} ${styles.date}`}>2022-02-07</span>
+                <span className={`${styles.span} ${styles.time}`}>09:02:25</span>
               </div>
               <div className={styles.commentBtn}>
                 <button

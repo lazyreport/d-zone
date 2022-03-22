@@ -70,7 +70,7 @@ function Loginbf_pannel2() {
 
   
   return (
-    <main>
+    <main className={styles.loginbf_pannel2}>
       <FadeIn>
       <div>
         <h2 className={styles.pannelText}>비밀번호 찾기</h2>
@@ -83,27 +83,27 @@ function Loginbf_pannel2() {
       <div className={styles.content}>
         <form name="findForm">
           <div className={`${styles.row} ${styles.emailRow}`}>
-            <label for="inputEmail">이메일</label>
+            <label for="inputEmail" className={styles.label}>이메일</label>
             <div className={styles.col}>
-              <input type="email" id="inputEmail" required />
+              <input type="email" id="inputEmail" className={styles.input} required />
             </div>
           </div>
           {/* e:emailRow */}
 
           <div className={`${styles.row} ${styles.usernameRow}`}>
-            <label for="inputUsername">아이디</label>
+            <label for="inputUsername" className={styles.label}>아이디</label>
             <div className={styles.col}>
-              <input type="text" id="inputUsername" required />
+              <input type="text" id="inputUsername"  className={styles.input} required />
             </div>
           </div>
           {/* e:usernameRow */}
 
           <div className={`${styles.row} ${styles.phoneRow}`}>
-            <label for="phoneNumber">휴대폰번호</label>
+            <label for="phoneNumber" className={styles.label}>휴대폰번호</label>
             <div className={styles.col}>
               <input
                 type="number"
-                className={styles.phoneBox}
+                className={`${styles.input} ${styles.phoneBox}`}
                 maxLength="3"
                 onChange={(e)=>{handleOnInput(e);}}
                 id="tel1"
@@ -111,7 +111,7 @@ function Loginbf_pannel2() {
               <div className={styles.hipen}></div>
               <input
                 type="number"
-                className={styles.phoneBox}
+                className={`${styles.input} ${styles.phoneBox}`}
                 maxLength="4"
                 onChange={(e)=>{handleOnInput(e);}}
                 id="tel2"
@@ -119,14 +119,14 @@ function Loginbf_pannel2() {
               <div className={styles.hipen}></div>
               <input
                 type="number"
-                className={styles.phoneBox}
+                className={`${styles.input} ${styles.phoneBox}`}
                 maxLength="4"
                 onChange={(e)=>{handleOnInput(e);}}
                 id="tel3"
               />
               <button
                 type="button"
-                className={styles.btn}
+                className={`${styles.button} ${styles.btn}`}
                 onClick={() => {
                   certifNumSend();
                   // certifBtnActive();
@@ -140,12 +140,12 @@ function Loginbf_pannel2() {
           {/* e:phoneRow */}
 
           <div className={`${styles.row} ${styles.codeRow}`}>
-            <label for="codeNumber">인증번호</label>
+            <label for="codeNumber" className={styles.label}>인증번호</label>
             <div className={styles.col}>
-              <input type="text" id="codeNumber" />
+              <input type="text" id="codeNumber" className={styles.input} />
               <button
                 type="button"
-                className={styles.btn}
+                className={`${styles.button} ${styles.btn}`}
                 id="certifBtn"
                 // disabled
                 onClick={() => {
