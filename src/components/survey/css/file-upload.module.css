@@ -1,6 +1,6 @@
 /* 상단 */
 .fileUploadbox {
-  width: 1200px;
+  width: 880px;
   margin: auto;
   border: 2px solid #333;
 }
@@ -33,7 +33,7 @@
 
 /* 컨텐츠 */
 .contentsbox {
-  width: 80%;
+  width: 100%;
   margin: 14px auto;
   display: flex;
   flex-direction: column;
@@ -47,23 +47,25 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
+  margin-left: 20px;
   margin-right: 23px;
   text-align: center;
+  width:100px;
 }
 .uploadBtn{
   font-size: 18px;
   background-color: #fff;
-  width: 100vh;
+  width: 600px;
   border-radius: 10px;
   outline: none;
-  border: 1px solid #333;
+  border: 1px solid #ccc;
 }
 ::-webkit-file-upload-button{
   color:#fff;
-  background: #333;
+  background: #ccc;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid #333;
+  border: 1px solid #ccc;
   outline: none;
 }
 /* 버튼 */
@@ -71,6 +73,7 @@
   margin-bottom: 17px;
   display: flex;
   justify-content: flex-end;
+  margin-right: 40px;
 }
 .submitBtn {
   background-color: #ffc107;

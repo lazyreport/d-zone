@@ -1,11 +1,11 @@
-main {
+.logined_qna_board {
   width: fit-content;
   min-height: calc(100vh - 221px);
   margin: 63px auto 108px auto;
 }
 
 .pannelText {
-font-size: 25px;
+font-size: 30px;
 font-weight: bold;
 text-align: center;
 color: #0c2461;
@@ -14,7 +14,7 @@ margin-bottom: 59px;
 
 /* qna 전체 박스 (qna-box) */
 .qnaBox {
-width: 1108px;
+width: 1000px;
 margin: auto;
 margin-bottom: 50px;
 margin-top: 50px;
@@ -29,6 +29,7 @@ margin-bottom: 20px;
 width: 100%;
 display: flex;
 justify-content: space-between;
+align-items: center;
 }
 .registSearch .registBox {
 justify-content: flex-start;
@@ -77,7 +78,7 @@ background-color: transparent;
 padding-right: 5px;
 padding-left: 5px;
 }
-.searchBox .btn img{
+.searchBox .btn .img{
 width: 20px;
 height: 20px;
 }
@@ -90,20 +91,20 @@ border-bottom: 1px solid #444444;
 border-collapse: collapse;
 overflow-y: scroll;
 }
-th {
+.th {
 border-bottom: 1px solid #444444;
 }
-th,
-td {
+.th,
+.td {
 border-left: 1px solid #444444;
 padding: 10px;
 text-align: center;
 }
-th:first-child,
-td:first-child {
+.th:first-child,
+.td:first-child {
 border-left: none;
 }
-tbody tr td:nth-child(2) a:hover{
+.tbody .tr .td:nth-child(2) .a:hover{
 color: red;
 }
 .table .number {
@@ -129,11 +130,11 @@ width: 200px;
 display: flex;
 justify-content: space-between;
 }
-.controllerBox a {
+.controllerBox .a {
 display: block;
 margin-right: 10px;
 }
-.controllerBox a:hover{
+.controllerBox .a:hover{
 color: #ff7a3d;
 }
 .controllerBox .btn {

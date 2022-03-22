@@ -24,7 +24,7 @@ function LoginContainer() {
             <li><span>|</span></li>
             <li><a href="./pages/SignUp.js">회원가입</a></li>
           </ul>
-          <button type="submit" id="pannel-button"><Link to="">패널인증시스템</Link></button>
+          <button type="submit" id="pannel-button"><Link to="/request-pannel-certif">패널인증시스템</Link></button>
         </form>
       </div>
       <ul className="bg-bubbles">

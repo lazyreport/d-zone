@@ -20,29 +20,29 @@ function Logined_home() {
     const result = []; 
     for(let i=0; i < numberOfContents; i++){
     result.push(
-        <tr>
-          <td scope="row" className={styles.number}>
+        <tr className={styles.tr}>
+          <td scope="row" className={`${styles.td} ${styles.number}`}>
             {i+1}
           </td>
-          <td scope="row" className={styles.title}>
+          <td scope="row" className={`${styles.td} ${styles.title}`}>
             <a>갤럭시S21 사용자 만족도 조사{i+1}</a>
           </td>
-          <td scope="row" className={styles.date}>
+          <td scope="row" className={`${styles.td} ${styles.date}`}>
             2021.10.28 ~ 2021.11.28
           </td>
-          <td scope="row" className={styles.sampleNeed}>
+          <td scope="row" className={`${styles.td} ${styles.sampleNeed}`}>
             500
           </td>
-          <td scope="row" className={styles.sampleComplete}>
+          <td scope="row" className={`${styles.td} ${styles.sampleComplete}`}>
             0
           </td>
-          <td scope="row" className={styles.state}>
-            <span> 설문예정</span>
+          <td scope="row" className={`${styles.td} ${styles.state}`}>
+            <span className={styles.span}> 설문예정</span>
           </td>
-          <td scope="row" className={styles.register}>
+          <td scope="row" className={`${styles.td} ${styles.register}`}>
             홍길동
           </td>
-          <td scope="row" className={styles.belong}>
+          <td scope="row" className={`${styles.td} ${ styles.belong}`}>
             개인
           </td>
         </tr>
@@ -64,24 +64,24 @@ function Logined_home() {
   // const offset = (page - 1) * limit;
 
   return (
-    <main>
+    <main className={styles.logined_home}>
       <div className={styles.container}>
         <FadeIn>
           <div className={styles.describe}>
             <div className={styles.surveyWill}>
-              <img src="/img/home_describe1.png" alt="" />
+              <img src="/img/home_describe1.png" alt="" className={styles.img} />
               <span className={styles.title}>설문예정</span>
               <span className={styles.case}>{surveyWill}건</span>
             </div>
-            <img src="/img/home_describe_arrow.png" alt="" />
+            <img src="/img/home_describe_arrow.png" alt="" className={styles.img} />
             <div className={styles.surveyIng}>
               <img src="/img/home_describe2.png" alt="" />
               <span className={styles.title}>설문중</span>
               <span className={styles.case}>{surveyIng}건</span>
             </div>
-            <img src="/img/home_describe_arrow.png" alt="" />
+            <img src="/img/home_describe_arrow.png" alt="" className={styles.img} />
             <div className={styles.surveyEd}>
-              <img src="/img/home_describe3.png" alt="" />
+              <img src="/img/home_describe3.png" alt="" className={styles.img} />
               <span className={styles.title}>설문마감</span>
               <span className={styles.case}>{surveyEd}건</span>
             </div>
@@ -92,7 +92,7 @@ function Logined_home() {
             <div className={styles.radioBox}>
               <div className={styles.checkWill}>
                 <input
-                  className={styles.checkRadio1}
+                  className={`${styles.input} ${styles.checkRadio1}`}
                   type="radio"
                   name="flexRadioDefault"
                   id="flexRadioDefault1"
@@ -101,7 +101,7 @@ function Logined_home() {
                   onClick={() => handleIsChecked("checkWill")}
                 />
                 <label
-                  className={styles.formCheckLabel}
+                  className={`${styles.label} ${styles.formCheckLabel}`}
                   htmlFor="flexRadioDefault1"
                 >
                   설문 예정
@@ -109,7 +109,7 @@ function Logined_home() {
               </div>
               <div className={styles.checkIng}>
                 <input
-                  className={styles.checkRadio2}
+                  className={`${styles.input} ${styles.checkRadio2}`}
                   type="radio"
                   name="flexRadioDefault"
                   id="flexRadioDefault2"
@@ -118,7 +118,7 @@ function Logined_home() {
                   onClick={() => handleIsChecked("checkIng")}
                 />
                 <label
-                  className={styles.formCheckLabel}
+                  className={`${styles.label} ${styles.formCheckLabel}`}
                   htmlFor="flexRadioDefault2"
                 >
                   설문 중
@@ -126,7 +126,7 @@ function Logined_home() {
               </div>
               <div className={styles.checkEd}>
                 <input
-                  className={styles.checkRadio3}
+                  className={`${styles.input} ${styles.checkRadio3}`}
                   type="radio"
                   name="flexRadioDefault"
                   id="flexRadioDefault3"
@@ -135,7 +135,7 @@ function Logined_home() {
                   onClick={() => handleIsChecked("checkEd")}
                 />
                 <label
-                  className={styles.formCheckLabel}
+                  className={`${styles.label} ${styles.formCheckLabel}`}
                   htmlFor="flexRadioDefault3"
                 >
                   설문 마감
@@ -148,37 +148,37 @@ function Logined_home() {
               {isChecked === "checkWill" ? (
                 <div className={styles.willSurvey}>
                   <table className={styles.table}>
-                    <thead>
-                      <tr>
-                        <th scope="col">설문번호</th>
-                        <th scope="col">조사명</th>
-                        <th scope="col">요청기간</th>
-                        <th scope="col">필요샘플수</th>
-                        <th scope="col">완료샘플수</th>
-                        <th scope="col">상태</th>
-                        <th scope="col">등록자</th>
-                        <th scope="col">소속</th>
+                    <thead className={styles.thead}>
+                      <tr className={styles.tr}>
+                        <th scope="col" className={styles.th}>설문번호</th>
+                        <th scope="col" className={styles.th}>조사명</th>
+                        <th scope="col" className={styles.th}>요청기간</th>
+                        <th scope="col" className={styles.th}>필요샘플수</th>
+                        <th scope="col" className={styles.th}>완료샘플수</th>
+                        <th scope="col" className={styles.th}>상태</th>
+                        <th scope="col" className={styles.th}>등록자</th>
+                        <th scope="col" className={styles.th}>소속</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody className={styles.tbody}>
                       {makeTableContents(surveyWill)}
                     </tbody>
                   </table>
                   {/* e: table */}
                   <div className={styles.qnaPageNumber}>
                     <div className={styles.controllerBox}>
-                      <a href="#" className={styles.btn}>
+                      <a href="#" className={`${styles.a} ${styles.btn}`}>
                         <FontAwesomeIcon
                           icon={faCaretLeft}
                           className={`${styles.fa} ${styles.faCaretLeft}`}
                         />
                       </a>
-                      <a href="#">1</a>
-                      <a href="#">2</a>
-                      <a href="#">3</a>
-                      <a href="#">4</a>
-                      <a href="#">5</a>
-                      <a href="#" className={styles.btn}>
+                      <a href="#" className={styles.a}>1</a>
+                      <a href="#" className={styles.a}>2</a>
+                      <a href="#" className={styles.a}>3</a>
+                      <a href="#" className={styles.a}>4</a>
+                      <a href="#" className={styles.a}>5</a>
+                      <a href="#" className={`${styles.a} ${styles.btn}`}>
                         <FontAwesomeIcon
                           icon={faCaretRight}
                           className={`${styles.fa} ${styles.fasCaretRight}`}
@@ -196,36 +196,36 @@ function Logined_home() {
                 <div className={styles.surveing}>
                   <table className={styles.table}>
                     <thead>
-                      <tr>
-                        <th scope="col">설문번호</th>
-                        <th scope="col">조사명</th>
-                        <th scope="col">요청기간</th>
-                        <th scope="col">필요샘플 수</th>
-                        <th scope="col">완료샘플 수</th>
-                        <th scope="col">상태</th>
-                        <th scope="col">등록자</th>
-                        <th scope="col">소속</th>
+                      <tr className={styles.tr}>
+                        <th scope="col" className={styles.th}>설문번호</th>
+                        <th scope="col" className={styles.th}>조사명</th>
+                        <th scope="col" className={styles.th}>요청기간</th>
+                        <th scope="col" className={styles.th}>필요샘플 수</th>
+                        <th scope="col" className={styles.th}>완료샘플 수</th>
+                        <th scope="col" className={styles.th}>상태</th>
+                        <th scope="col" className={styles.th}>등록자</th>
+                        <th scope="col" className={styles.th}>소속</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody className={styles.tbody}>
                       {makeTableContents(surveyIng)}
                     </tbody>
                   </table>
                   {/* e: table */}
                   <div className={styles.qnaPageNumber}>
                     <div className={styles.controllerBox}>
-                      <a href="#" className={styles.btn}>
+                      <a href="#" className={`${styles.a} ${styles.btn}`}>
                         <FontAwesomeIcon
                           icon={faCaretLeft}
                           className={`${styles.fa} ${styles.faCaretLeft}`}
                         />
                       </a>
-                      <a href="#">1</a>
-                      <a href="#">2</a>
-                      <a href="#">3</a>
-                      <a href="#">4</a>
-                      <a href="#">5</a>
-                      <a href="#" className={styles.btn}>
+                      <a href="#" className={styles.a}>1</a>
+                      <a href="#" className={styles.a}>2</a>
+                      <a href="#" className={styles.a}>3</a>
+                      <a href="#" className={styles.a}>4</a>
+                      <a href="#" className={styles.a}>5</a>
+                      <a href="#" className={`${styles.a} ${styles.btn}`}>
                         <FontAwesomeIcon
                           icon={faCaretRight}
                           className={`${styles.fa} ${styles.fasCaretRight}`}
@@ -244,36 +244,36 @@ function Logined_home() {
                 <div className={styles.surveied}>
                   <table className={styles.table}>
                     <thead>
-                      <tr>
-                        <th scope="col">설문번호</th>
-                        <th scope="col">조사명</th>
-                        <th scope="col">요청기간</th>
-                        <th scope="col">필요샘플 수</th>
-                        <th scope="col">완료샘플 수</th>
-                        <th scope="col">상태</th>
-                        <th scope="col">등록자</th>
-                        <th scope="col">소속</th>
+                      <tr className={styles.tr}>
+                        <th scope="col" className={styles.th}>설문번호</th>
+                        <th scope="col" className={styles.th}>조사명</th>
+                        <th scope="col" className={styles.th}>요청기간</th>
+                        <th scope="col" className={styles.th}>필요샘플 수</th>
+                        <th scope="col" className={styles.th}>완료샘플 수</th>
+                        <th scope="col" className={styles.th}>상태</th>
+                        <th scope="col" className={styles.th}>등록자</th>
+                        <th scope="col" className={styles.th}>소속</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody className={styles.tbody}>
                       {makeTableContents(surveyEd)}
                     </tbody>
                   </table>
                   {/* e: table */}
                   <div className={styles.qnaPageNumber}>
                     <div className={styles.controllerBox}>
-                      <a href="#" className={styles.btn}>
+                      <a href="#" className={`${styles.a} ${styles.btn}`}>
                         <FontAwesomeIcon
                           icon={faCaretLeft}
                           className={`${styles.fa} ${styles.faCaretLeft}`}
                         />
                       </a>
-                      <a href="#">1</a>
-                      <a href="#">2</a>
-                      <a href="#">3</a>
-                      <a href="#">4</a>
-                      <a href="#">5</a>
-                      <a href="#" className={styles.btn}>
+                      <a href="#" className={styles.a}>1</a>
+                      <a href="#" className={styles.a}>2</a>
+                      <a href="#" className={styles.a}>3</a>
+                      <a href="#" className={styles.a}>4</a>
+                      <a href="#" className={styles.a}>5</a>
+                      <a href="#" className={`${styles.a} ${styles.btn}`}>
                         <FontAwesomeIcon
                           icon={faCaretRight}
                           className={`${styles.fa} ${styles.fasCaretRight}`}

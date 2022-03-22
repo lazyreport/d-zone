@@ -3,11 +3,11 @@ import styles from "./css/send.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import '../../reset.css';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const MODAL_STYLES = {
     position: 'absolute',
-    top: '80%',
+    top: '70%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
     backgroundColor: '#fff',

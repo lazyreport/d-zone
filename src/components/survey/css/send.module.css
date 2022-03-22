@@ -1,6 +1,6 @@
 /* 상단 */
 .sendbox {
-  width: 1200px;
+  width: 780px;
   margin: auto;
 }
 .titlebox {
@@ -56,7 +56,6 @@ input:focus {
   margin-left: 93px;
 }
 .formArea li {
-  /*list-style: disc;*/
   padding-bottom: 26px;
   font-size: 18px;
 }
