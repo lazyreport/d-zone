@@ -124,7 +124,24 @@
   color: #fff;
   background-color: #ffc107;
 }
+.Join2_1 table .checkbtn{
+  display: inline-block;
+  width: 120px;
+  height: 36px;
+  border-radius: 5px;
+  font-size: 13px;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+  background-color: #ffc107;
+  border: transparent;
+  cursor: pointer;
+}
 .Join2_1 table td a {
+  float: right;
+  margin: 2px 20px auto 0;
+}
+.Join2_1 table td .checkbtn {
   float: right;
   margin: 2px 20px auto 0;
 }
@@ -164,11 +181,13 @@
 
 /* input width */
 .input_box {
-  width: 400px;
+  width: 410px;
   height: 40px;
   background-color: #f2f2f2;
   border: none;
   border-radius: 5px;
+  font-size: 16px;
+  text-indent: 5px;
 }
 .phone_box {
   width: 100px;
@@ -176,6 +195,8 @@
   background-color: #f2f2f2;
   border: none;
   border-radius: 5px;
+  font-size: 16px;
+  text-indent: 5px;
 }
 
 /* bottom btn */
@@ -198,6 +219,7 @@
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   box-sizing: border-box;
+  font-size: 17px;
 }
 .btn_group .back_btn {
   background-color: #fff;

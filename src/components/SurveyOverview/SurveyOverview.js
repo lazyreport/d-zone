@@ -13,9 +13,9 @@ function SurveyOverview() {
     for (let i = 0; i < numberOfContents; i++) {
       result.push(
         // 생성하고 싶은 tbody 의 tr 복사
-        <tr className={styles.accepted}>
+        <tr  onClick={showInfo} className={`${styles.panel_table_row} ${styles.accepted}`}>
           <td>{i+1}</td>
-          <td><Link to="/survey-info">갤럭시S21 사용자 만족도 조사{i+1}</Link></td>
+          <td>갤럭시S21 사용자 만족도 조사{i+1}</td>
           <td>2021.10.28 ~ 2021.11.28</td>
           <td>500</td>
           <td>0</td>
@@ -28,6 +28,10 @@ function SurveyOverview() {
     }
     return result;
   };
+
+  const showInfo = ()=>{
+    window.location.replace("/survey-info")
+  }
 
 
   return (
@@ -47,10 +51,10 @@ function SurveyOverview() {
           <caption>설문승인 현황</caption>
               <colgroup>
                   <col style={{width: "60px"}} />
-                  <col style={{width: "380px"}} />
                   <col style={{width: "280px"}} />
-                  <col style={{width: "90px"}} />
-                  <col style={{width: "90px"}} />
+                  <col style={{width: "230px"}} />
+                  <col style={{width: "100px"}} />
+                  <col style={{width: "100px"}} />
                   <col style={{width: "80px"}} />
                   <col style={{width: "100px"}} />
                   <col style={{width: "100px"}} />

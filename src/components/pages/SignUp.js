@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink, Link } from "react-router-dom";
 import styles from '../Join1/join1.module.css';
 
-export default function SignUp() {
+export default function SignUp({ history }) {
 
   const [checkedButtons, setCheckedButtons] = useState([]);
 
@@ -19,6 +19,9 @@ export default function SignUp() {
   const isAllChecked = checkedButtons.length === 2;
   const disabled = !isAllChecked;
 
+  function btnClick(e){
+    window.location.replace("/join2_1")
+  }
 
   return (
     <div className={styles.Join1}>
@@ -73,7 +76,18 @@ export default function SignUp() {
               </ul>
           </form>
         <div className={styles.foot_btn}>
-          <Link to="/join2_1">다음</Link>
+          <button
+          disabled={disabled}
+          className={styles.next_btn}
+          onClick={btnClick}
+          style={
+            disabled
+              ? { backgroundColor: '#bbb',color: '#fff' }
+              : { backgroundColor: '#fdb415',color: '#fff' }
+          }
+        >
+          확인
+        </button>
         </div>
           
         </div>
