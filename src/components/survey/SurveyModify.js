@@ -6,6 +6,7 @@ import '../../reset.css';
 import { Link } from "react-router-dom";
 import Gnb from '../Gnb'
 import {useState, useCallback} from 'react';
+import FadeIn from 'react-fade-in';
 
 function SurveyModify(){
     /* 태그 생성 */
@@ -33,6 +34,7 @@ function SurveyModify(){
     }
     return(
         <>
+        <FadeIn>
         <Gnb />
         <div className={styles.modifybox}>
             <form className={styles.form}>
@@ -180,6 +182,7 @@ function SurveyModify(){
                 <button className={styles.cancelBtn} onClick={()=>{alert('변경사항이 저장되지 않습니다.')}}><Link to='/registration/marketresearch'>취소</Link></button>
             </section>
         </div>
+        </FadeIn>
         </>
     )
 }
