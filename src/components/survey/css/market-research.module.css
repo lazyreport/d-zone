@@ -28,9 +28,10 @@
   font-size: 24px;
   font-weight: 700;
   padding-bottom: 19px;
+  color: #333;
 }
 .txtarea p {
-  font-size: 13px;
+  font-size: 16px;
   padding-bottom: 20px;
 }
 /* chart 텍스트 */
@@ -50,6 +51,7 @@
   border-bottom: 1px solid #333;
   padding: 16px;
   margin: 28px auto 37px;
+  color:#000;
 }
 .resultTxt {
   display: flex;
@@ -60,6 +62,7 @@
 .resultTxt span {
   font-size: 16px;
   padding-bottom: 20px;
+  color: #333;
 }
 .resultTxt:last-child span {
   padding-bottom: 39px;
@@ -101,6 +104,12 @@
 }
 .tag {
   cursor: pointer;
+  padding: 0 3px;
+}
+.tag span{
+  color: #333;
+  font-weight: 400;
+  margin: auto;
 }
 .history {
   margin-bottom: 70px;
@@ -135,6 +144,10 @@
   vertical-align: middle;
   margin: auto;
 }
+.resendTxt p{
+  padding-bottom: 30px;
+}
+
 .resendTxt p:last-child {
   color: #ff5907;
 }
@@ -168,6 +181,9 @@
   align-items: center;
   vertical-align: middle;
   margin: auto;
+}
+.confirmTxt p{
+  padding-bottom: 30px;
 }
 .confirmTxt p:last-child {
   color: #ff5907;

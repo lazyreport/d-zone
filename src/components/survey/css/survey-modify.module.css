@@ -13,7 +13,6 @@
 }
 .dl1,
 .dl2,
-.dl3,
 .dl4 {
   display: flex;
   margin-bottom: 15px;
@@ -28,38 +27,26 @@
   line-height: 1.2;
   font-weight: 700;
 }
+.dl1 dt span{
+  color: #333;
+}
 .dl2 dt {
   width: 120px;
   font-size: 17px;
   line-height: 1.2;
   font-weight: 700;
 }
-.dl3 dt {
-  width: 300px;
-  font-size: 17px;
-  line-height: 1.2;
-  font-weight: 700;
-  display: flex;
-}
-.dl3 dd {
-  display: flex;
-}
-.dl3 dt span {
-  display: inline-block;
-  width: 120px;
-}
-.dl3 dd span {
-  display: inline-block;
-  width: 100px;
-  font-size: 17px;
-  line-height: 1.2;
-  font-weight: 700;
+.dl2 dt span{
+  color: #333;
 }
 .dl4 dt {
   width: 120px;
   font-size: 17px;
   line-height: 1.2;
   font-weight: 700;
+}
+.dl4 dt span{
+  color: #333;
 }
 .dl4 dd {
   display: flex;
@@ -72,6 +59,9 @@
   font-size: 17px;
   line-height: 1.2;
   font-weight: 700;
+}
+.dl5 dt span{
+  color: #333;
 }
 /* dl 길이*/
 .dl1 dd input {
@@ -87,6 +77,11 @@
 }
 .dl2 dd input {
   height: 23px;
+}
+
+.datearea span{
+  color:#333;
+  padding-right: 10px;
 }
 /* 단계 */
 .dl6 {
@@ -108,6 +103,7 @@
   width: 50px;
   font-size: 17px;
   line-height: 1.3;
+  margin-right: 10px;
 }
 .stepArea dd section {
   margin-bottom: 10px;
@@ -138,11 +134,14 @@ input:focus {
   border-radius: 10px;
   border: none;
   outline:none;
+  cursor: pointer;
+  font-weight: 600;
 }
 .dl4 p {
   font-size: 16px;
   line-height: 2;
   margin-left: 5px;
+  padding-top: 2px;
 }
 /* 선택박스 & 태그 */
 .selectArea {
@@ -185,7 +184,7 @@ select option[value=""]:disabled {
 .btnArea {
   display: flex;
   justify-content: flex-end;
-  margin: 0 30px 20px;
+  margin: 10 30px;
 }
 .saveBtn {
   background-color: #ffc107;
