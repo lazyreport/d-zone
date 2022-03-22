@@ -3,6 +3,7 @@ import styles from "./css/transfer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import '../../reset.css';
+import { useCallback } from "react";
 
 const MODAL_STYLES = {
     position: 'fixed',

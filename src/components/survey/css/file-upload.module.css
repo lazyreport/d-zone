@@ -1,6 +1,6 @@
 /* 상단 */
 .fileUploadbox {
-  width: 1200px;
+  width: 880px;
   margin: auto;
   border: 2px solid #333;
 }
@@ -33,7 +33,7 @@
 
 /* 컨텐츠 */
 .contentsbox {
-  width: 80%;
+  width: 100%;
   margin: 14px auto;
   display: flex;
   flex-direction: column;
@@ -47,30 +47,86 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
+  margin-left: 20px;
   margin-right: 23px;
   text-align: center;
+  width:100px;
 }
 .uploadBtn{
   font-size: 18px;
   background-color: #fff;
-  width: 100vh;
+  width: 600px;
   border-radius: 10px;
   outline: none;
-  border: 1px solid #333;
+  border: 1px solid #ccc;
 }
 ::-webkit-file-upload-button{
   color:#fff;
-  background: #333;
+  background: #ccc;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid #333;
+  border: 1px solid #ccc;
   outline: none;
 }
+/*
+.filebox input:focus {
+  outline: none;
+  color: transparent;
+}
+.box span {
+  align-self: center;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  margin-right: 23px;
+  text-align: center;
+}
+.box .uploadName {
+  display: inline-block;
+  padding: 0 10px;
+  vertical-align: middle;
+  border: 1px solid #333;
+  border-radius: 9px;
+  color: #999;
+  width: 80%;
+  height: 40px;
+  align-self: center;
+  text-indent: 20px;
+  font-size: 18px;
+}
+.box label {
+  display: inline-block;
+  padding: 11px 26px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  vertical-align: middle;
+  background-color: #333;
+  border-radius: 9px;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  top: 0;
+  left: 16px;
+  z-index: 1;
+}
+.box input[type="file"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}*/
+
 /* 버튼 */
 .btnArea {
   margin-bottom: 17px;
   display: flex;
   justify-content: flex-end;
+  margin-right: 40px;
 }
 .submitBtn {
   background-color: #ffc107;

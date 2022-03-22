@@ -94,7 +94,7 @@ function MarketResearch(){
     return(
         <>
         <Gnb />
-        <div>
+        <div className={styles.researchWrapper}>
             <div className={styles.marketResearch}>
                 <div className={styles.toparea}>
                     <section className={styles.imgarea}>

@@ -1,6 +1,6 @@
 /*상단*/
 .modifybox {
-  width: 100vw;
+  max-width: 1200px;
   margin: 20px auto 0;
   color: #333;
   font-size: 17px;
