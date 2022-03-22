@@ -31,7 +31,6 @@ function SurveyModify(){
     function deleteTagthree(index){
         setTagthree(tagthree.filter((el,i)=>i !== index))
     }
-
     return(
         <>
         <Gnb />
@@ -55,7 +54,8 @@ function SurveyModify(){
                     <dt><span>발송패널 수</span></dt>
                     <dd>
                         <div className={styles.fileuploadArea}>
-                            <input type="file" accept=".xls,.xlsx" className={styles.uploadButton} />
+                            <label for="fileup">파일등록</label>
+                            <input type="file" id="fileup" accept=".xls,.xlsx" className={styles.uploadButton} />
                         </div>
                         <p>12,500건</p>
                     </dd>
@@ -177,7 +177,7 @@ function SurveyModify(){
             </form>
             <section className={styles.btnArea}>
                 <button className={styles.saveBtn} onClick={()=>{alert('저장되었습니다.')}}><Link to='/registration'>저장</Link></button>
-                <button className={styles.cancelBtn} onClick={()=>{alert('변경사항이 저장되지 않습니다.')}}><Link to='/marketresearch'>취소</Link></button>
+                <button className={styles.cancelBtn} onClick={()=>{alert('변경사항이 저장되지 않습니다.')}}><Link to='/registration/marketresearch'>취소</Link></button>
             </section>
         </div>
         </>
