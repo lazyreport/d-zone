@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './join1.module.css';
-import './join1.css';
 
 function Join1() {
   return (
