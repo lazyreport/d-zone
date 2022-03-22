@@ -224,23 +224,23 @@
 }
 
 .content4 .cont4-box1 li:first-child {
-    background: url(//public/img/content04-1.jpg) no-repeat 100% -65%;
+    background: url(/public/img/content04-1.jpg) no-repeat 100% -65%;
     background-size: 55%;
     background-color: #fff;
 }
 
 .content4 .cont4-box1 li:last-child {
-    background: url(//public/img/content04-2.jpg) no-repeat 100% -75%;
+    background: url(/public/img/content04-2.jpg) no-repeat 100% -75%;
     background-color: #fff;
 }
 
 .content4 .cont4-box2 li:first-child {
-    background: url(//public/img/content04-3.jpg) no-repeat 100% -75%;
+    background: url(/public/img/content04-3.jpg) no-repeat 100% -75%;
     background-color: #fff;
 }
 
 .content4 .cont4-box2 li:last-child {
-    background: url(//public/img/content04-4.jpg) no-repeat 100% -20%;
+    background: url(/public/img/content04-4.png) no-repeat 100% -20%;
     background-color: #fff;
     position: relative;
 }
@@ -325,6 +325,7 @@
     background-color: #fff;
     width: 10%;
     height: 1%;
+    margin-bottom: 20px;
 }
 
 .content6 .inner-box .left p {
@@ -332,17 +333,20 @@
     color: #fff;
     text-align: left;
     font-weight: bold;
+    margin-bottom: 0;
+    padding-top: 0;
+    height: 70px;
 }
 
 .content6 .inner-box .left .container6-bottom button {
-    margin-top: 50px;
+    margin-top: 40px;
     padding: 15px 15px; 
     background: linear-gradient(-45deg, #fc7b11, #d377e6, #ffbe31, #fc7b11);
     background-size: 400% 400%;
     animation: gradient 5s ease infinite;
     color: #fff; 
     border-radius: 10px; 
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     width: 50%;
     border: none;
@@ -353,7 +357,7 @@
   
 
 /* tartget 1,2 스크립트 */
-.active{
+.fadeActive{
     opacity: 1;
     transform: translateY(0px);
     transition: all 0.54s;
