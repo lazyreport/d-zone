@@ -27,6 +27,17 @@ function Footer() {
               이용약관
             </Link>
           </Button>
+          <div class="footer-select">
+            <select class="form-select">
+              <option selected>Family site</option>
+              <option value="1">homepage01</option>
+              <option value="2">homepage02</option>
+              <option value="3">homepage03</option>
+              <option value="3">homepage04</option>
+              <option value="3">homepage05</option>
+            </select>
+          </div>
+          {/* 
           <div class="social-icons">
             <Link
               class="social-icon-link facebook"
@@ -52,7 +63,7 @@ function Footer() {
               target="_blank"
               aria-label="Twitter"
             ></Link>
-          </div>
+          </div>*/}
         </section>
       </div>
     </div>
