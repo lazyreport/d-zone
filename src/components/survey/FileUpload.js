@@ -53,7 +53,7 @@ function FileUpload({fileopen, children, onClose}){
                     </div>
                 </section>
                 <section className={styles.btnArea}>
-                    <button className={styles.submitBtn} onClick={()=>{alert('파일이 업로드 되었습니다.')}}>
+                    <button className={styles.submitBtn} onClick={()=>{onClose();alert('파일이 업로드 되었습니다.');}}>
                         <span>등록</span>
                     </button>
                 </section>

@@ -17,6 +17,9 @@
   padding: 18px 0;
   color: #fff;
 }
+.titletext span{
+  color:#fff;
+}
 .xbox {
   position: relative;
   right: 10px;
@@ -44,7 +47,9 @@
   line-height: 18px;
   font-weight: bold;
 }
-
+.transferText span{
+  color:#333;
+}
 /* 버튼 */
 .btnArea {
   margin-right: 80px;
@@ -62,6 +67,5 @@
   cursor: pointer;
   font-size: 18px;
   font-weight: bold;
-  margin-right: 10px;
   border-radius: 9px;
 }

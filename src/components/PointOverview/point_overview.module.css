@@ -50,26 +50,27 @@
   justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
-.condition_box > span {
-  font-weight: bold;
-}
-
 .condition_box span {
+  font-weight: bold;
   margin-right: 10px;
 }
 
 .date_box {
   width: 375px;
   font-size: 16px;
+  display: flex;
+  align-items: center;
 }
-.date_box > label {
-  display: none;
-}
-.date_box input {
-  padding: 3px 6px;
-  outline: transparent;
+
+.date_box .date_picker {
+  border: 1px solid #999 !important;
+  outline: transparent !important;
   cursor: pointer;
+  width: 150px !important;
+  font-family: 'Noto Sans KR', sans-serif !important;
+  display: inline-block !important;
 }
 
 .process_box {
@@ -77,10 +78,13 @@
   padding-right: 30px;
 }
 .process_select {
-  padding: 5px 8px;
+  padding: 8px 8px;
   font-size: 14px;
   outline: transparent;
   cursor: pointer;
+  border: 1px solid #999;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
 /* search_box */
@@ -123,6 +127,7 @@
   border-right: transparent;
   text-align: center;
   margin-top: 20px;
+  width: 100%;
 }
 .panel_table tbody {
   padding: 10px 0;
@@ -134,12 +139,16 @@
   padding: 10px 0;
   text-align: center;
 }
+.panel_table .panel_table_row:hover{
+  background-color: rgba(255, 193, 7,0.1);
+  cursor: pointer;
+}
 .panel_table td {
   border: 1px solid #ddd;
   font-size: 14px;
-  padding: 8px 0;
   border-top: transparent;
   border-bottom: transparent;
+  height: 50px;
 }
 .panel_table thead th:first-child {
   border-left: transparent;

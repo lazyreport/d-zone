@@ -69,8 +69,8 @@ function PanelSystemInfo() {
         <div className={styles.change_log}>
           <p>[기록]</p>
           <ul className={styles.change_log_list}>
-            <li>2021.12.06 13:36 김주리 님이 상태를 접수 에서 {process} 으로 변경하였습니다.</li>
-            <li>2021.12.06 17:55 김주리 님이 상태를 처리중 에서 {process} 로 변경하였습니다.</li>
+            <li>2021.12.06 13:36 김주리 님이 상태를 완료 &#40;으&#41;로 변경하였습니다.</li>
+            <li>2021.12.06 17:55 김주리 님이 상태를 {process} &#40;으&#41;로 변경하였습니다.</li>
           </ul>
         </div>
       </main>

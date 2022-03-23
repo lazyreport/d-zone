@@ -132,18 +132,24 @@
 
 /* bottom-btn*/
 .foot_btn {
-  width: 150px;
-  height: 40px;
-  margin: 40px auto 20px auto;
+  width: 200px;
+  height: 45px;
+  margin: 20px auto;
 }
-.foot_btn a {
+.foot_btn .next_btn {
   display: block;
-  height: 40px;
+  width: 200px;
+  height: 45px;
   line-height: 40px;
+  border: transparent;
   border-radius: 5px;
   text-align: center;
-  background-color: #fdb415 /* #34495e */;
-  color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-sizing: border-box;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
 }
 .foot_btn a:hover {
   background-color: #fdb415;

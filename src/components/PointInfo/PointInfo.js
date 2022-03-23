@@ -1,14 +1,35 @@
-import React from "react";
-import "./point_info.css";
+import React, { useState } from "react";
+import { Link } from 'react-router-dom';
+import styles from "./point_info.module.css";
 import Gnb from "../Gnb";
 
 function PointInfo() {
+
+  const [process,setProcess] = useState("접수");
+  
+
+  const Options =[
+    {key:"접수", value:"접수"},
+    {key:"처리중", value:"처리중"},
+    {key:"완료", value:"완료"}
+  ]
+
+  const changeProcess = (e) => {
+    setProcess(e.currentTarget.value);
+    console.log(process);
+  };
+
+  //목록버튼
+  const goList = ()=>{
+    window.location.replace("/survey-overview")
+  }
+
   return (
-    <div className="point_info">
+    <div className={styles.point_info}>
       <Gnb />
-      <main className="content cf">
+      <main className={`${styles.content} ${styles.cf}`}>
       <h2>패널인증시스템 신청현황 상세정보</h2>
-      <table className="info">
+      <table className={styles.info}>
         <caption>패널인증시스템 신청현황 상세정보</caption>
           <colgroup>
             <col style={{width: "150px"}} />
@@ -38,26 +59,26 @@ function PointInfo() {
             <td>포인트</td>
             <td>20,000 point</td>
           </tr>
-          <tr className="last">
+          <tr className={styles.last}>
             <td>계좌정보</td>
             <td>기업은행 | 0000-0000-0000-00 | 홍길동</td>
           </tr>
         </table>
-        <div className="info_btn_box">
+        <div className={styles.info_btn_box}>
           <span>상태</span>
-          <select name="process" className="process_select">
-            <option value="reception">접수</option>
-            <option value="proceeding">처리중</option>
-            <option value="complete">완료</option>
+          <select name="process" className={styles.process_select} onChange={changeProcess} value={process}>
+            {Options.map((item, index)=>(
+            <option key={item.key} value={item.key}>{item.value}</option>
+            ))}
           </select>
-          <button className="save_btn">저장</button>
-          <button className="list_btn">목록</button>
+          <Link to="#" className={styles.save_btn}>저장</Link>
+          <Link to="/survey-overview" className={styles.list_btn} onClick={goList}>목록</Link>
         </div>
-        <div className="change_log">
+        <div className={styles.change_log}>
           <p>[기록]</p>
-          <ul className="change_log_list">
-            <li>2021.12.06 13:36 김주리 님이 상태를 접수 에서 처리중 으로 변경하였습니다.</li>
-            <li>2021.12.06 17:55 김주리 님이 상태를 처리중 에서 완료 로 변경하였습니다.</li>
+          <ul className={styles.change_log_list}>
+            <li>2021.12.06 13:36 김주리 님이 상태를 완료 &#40;으&#41;로 변경하였습니다.</li>
+            <li>2021.12.06 17:55 김주리 님이 상태를 {process} &#40;으&#41;로 변경하였습니다.</li>
           </ul>
         </div>
       </main>

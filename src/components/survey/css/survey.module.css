@@ -11,6 +11,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 17px;
+  color: #333;
 }
 .searchArea {
   display: flex;
@@ -89,6 +90,7 @@ th {
 th,
 td {
   border-right: 1px solid #ccc;
+  padding:15px;
 }
 th:last-child {
   border-right: none;
@@ -106,7 +108,7 @@ td:last-child {
 /* page change num */
 .pageChange {
   text-align: center;
-  margin: 20px 0 119px;
+  margin: 40px 0 119px;
 }
 .pageNum {
   font-size: 16px;
