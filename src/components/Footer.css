@@ -43,7 +43,7 @@
   flex-direction: column;
   justify-content: flex-end;
 }
-
+/*
 .social-icons {
   display: flex;
   justify-content: space-between;
@@ -57,6 +57,14 @@
   width: 51px;
   height: 51px;
   border-radius: 50%;
+}*/
+
+.footer-select{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 243px;
+  margin-top: 140px;
 }
 
 
