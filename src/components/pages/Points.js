@@ -1,6 +1,7 @@
 import React from 'react';
 import Gnb from '../Gnb';
 import './points.css';
+import FadeIn from 'react-fade-in';
 
 export default function Points() {
   
@@ -8,6 +9,7 @@ export default function Points() {
     <div className='points'>
       <Gnb />
       <main className="point">
+      <FadeIn>
       <h2>[ 보유 포인트 ] <span>100point</span></h2>
       <div className="point-form-wrap">
           <form className="row gy-1 gx-4 align-items-center">
@@ -77,7 +79,8 @@ export default function Points() {
                   <button type="button" className="btn-yellow">충전하기</button>
               </div>
               
-          </section>    
+          </section>
+      </FadeIn>    
       </main>
     </div>
   )

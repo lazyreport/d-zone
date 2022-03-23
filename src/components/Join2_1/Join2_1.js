@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import styles from "./Join2_1.module.css";
+import FadeIn from "react-fade-in";
 
 function Join2_1({ firstPassword, lastPassword }) {
   // 설문조사 체크
@@ -86,178 +87,182 @@ function Join2_1({ firstPassword, lastPassword }) {
               </li>
             </ul>
           </div>
+          <FadeIn>
+            <h4>
+              기본정보입력<span>(*필수)</span>
+            </h4>
+            <form name="write_form_member" method="post">
+              <table>
+                <tr>
+                  {/* 회원구분 옆에 물음표 추가하여 가이드라인 띄우기 */}
+                  <th>
+                    <span>*</span> 회원구분
+                  </th>
+                  <td className={styles.s}>
+                    <div className={styles.ipbox}>
+                      {/* toggle로 내용구분 */}
+                      <input
+                        type="radio"
+                        name="chk_member"
+                        value="individual"
+                        checked={isChecked === "individual"}
+                        onClick={() => handleIsChecked("individual")}
+                      />{" "}
+                      개인회원
+                      <input
+                        type="radio"
+                        name="chk_member"
+                        className={styles.chk_member}
+                        value="corporate"
+                        checked={isChecked === "corporate"}
+                        onClick={() => handleIsChecked("corporate")}
+                      />{" "}
+                      법인회원
+                    </div>
+                    <div className={styles.toggle_box}>
+                      {isChecked === "individual" ? " " : ""}
 
-          <h4>
-            기본정보입력<span>(*필수)</span>
-          </h4>
-
-          <form name="write_form_member" method="post">
-            <table>
-              <tr>
-                {/* 회원구분 옆에 물음표 추가하여 가이드라인 띄우기 */}
-                <th>
-                  <span>*</span> 회원구분
-                </th>
-                <td className={styles.s}>
-                  <div className={styles.ipbox}>
-                    {/* toggle로 내용구분 */}
-                    <input type="radio" name="chk_member" 
-                    value="individual"
-                    checked={isChecked === "individual"}
-                    onClick={() => handleIsChecked("individual")}
-                    /> 개인회원
+                      {isChecked === "corporate" ? (
+                        <ul className={styles.input_group}>
+                          <li>*법인명</li>
+                          <li>
+                            <input
+                              type="text"
+                              name="cursor:pointer"
+                              className={`${styles.company_input} ${styles.input_box}`}
+                            />
+                          </li>
+                          <li>*사업자등록번호</li>
+                          <li>
+                            <input
+                              type="text"
+                              name="cursor:pointer"
+                              className={`${styles.company_input} ${styles.input_box}`}
+                            />
+                          </li>
+                          <li>
+                            <Link to="#" className={styles.first_btn}>
+                              법인조회
+                            </Link>
+                          </li>
+                        </ul>
+                      ) : (
+                        ""
+                      )}
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <span>*</span> 아이디
+                  </th>
+                  <td>
                     <input
-                      type="radio"
-                      name="chk_member"
-                      className={styles.chk_member}
-                      value="corporate"
-                      checked={isChecked === "corporate"}
-                      onClick={() => handleIsChecked("corporate")}
-                    /> 법인회원
-                  </div>
-                  <div className={styles.toggle_box}>
-                    {isChecked === "individual" ? " " : ""}
-
-                    {isChecked === "corporate" ? (
-                      <ul className={styles.input_group}>
-                        <li>*법인명</li>
-                        <li>
-                          <input
-                            type="text"
-                            name="cursor:pointer"
-                            className={`${styles.company_input} ${styles.input_box}`}
-                          />
-                        </li>
-                        <li>*사업자등록번호</li>
-                        <li>
-                          <input
-                            type="text"
-                            name="cursor:pointer"
-                            className={`${styles.company_input} ${styles.input_box}`}
-                          />
-                        </li>
-                        <li>
-                          <Link to="#" className={styles.first_btn}>
-                            법인조회
-                          </Link>
-                        </li>
-                      </ul>
-                    ) : (
-                      ""
-                    )}
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  <span>*</span> 아이디
-                </th>
-                <td>
-                  <input
-                    type="text"
-                    name="cursor:pointer"
-                    className={styles.input_box}
-                  />
-                  {/* <!-- alert 창 띄우기 --> */}
-                  <button onClick={checkID} className={styles.checkbtn}>
-                    중복확인
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  <span>*</span> 사용자 이름
-                </th>
-                <td>
-                  <input type="text" className={styles.input_box} name="" />
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  <span>*</span> 비밀번호 입력
-                </th>
-                <td>
-                  <input
-                    type="password"
-                    name=""
-                    className={styles.input_box}
-                    placeholder=" 영문 대소문자/숫자 혼합 10~15자리 내로 입력해주세요."
-                    onBlur={checkPassword}
-                    value={firstPassword}
-                  />
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  <span>*</span> 비밀번호 확인
-                </th>
-                <td>
-                  <input
-                    type="password"
-                    className={styles.input_box}
-                    name=""
-                    value={lastPassword}
-                  />
-                  <button onClick={comparePassword} className={styles.checkbtn}>
-                    비밀번호 확인
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  <span>*</span> 휴대폰 번호
-                </th>
-                <td>
-                  <input type="text" className={styles.phone_box} /> -
-                  <input
-                    type="text"
-                    className={styles.phone_box}
-                    name="tel_h2_1"
-                  />{" "}
-                  -
-                  <input
-                    type="text"
-                    className={styles.phone_box}
-                    name="tel_h2_2"
-                  />
-                  <button onClick={sendMsg} className={styles.checkbtn}>
-                    인증번호발송
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  <span>*</span> 인증번호 입력
-                </th>
-                <td>
-                  <input type="text" className={styles.input_box} name="" />
-                  <button onClick={checkMsg} className={styles.checkbtn}>
-                    확인
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  <span>*</span> 이메일 입력
-                </th>
-                <td>
-                  <input type="text" className={styles.input_box} name="" />
-                  {/* <!-- 해당버튼 클릭시 '인증완료'문구 보이게하기 --> */}
-                  <button onClick={checkEmail} className={styles.checkbtn}>
-                    인증
-                  </button>
-                </td>
-              </tr>
-            </table>
-          </form>
-          <div className={styles.btn_group}>
-            <NavLink to="/sign-up" className={styles.back_btn}>
-              이전페이지
-            </NavLink>
-            <NavLink to="/join3" className={styles.join_btn}>
-              회원가입
-            </NavLink>
-          </div>
+                      type="text"
+                      name="cursor:pointer"
+                      className={styles.input_box}
+                    />
+                    {/* <!-- alert 창 띄우기 --> */}
+                    <button onClick={checkID} className={styles.checkbtn}>
+                      중복확인
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <span>*</span> 사용자 이름
+                  </th>
+                  <td>
+                    <input type="text" className={styles.input_box} name="" />
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <span>*</span> 비밀번호 입력
+                  </th>
+                  <td>
+                    <input
+                      type="password"
+                      name=""
+                      className={styles.input_box}
+                      placeholder=" 영문 대소문자/숫자 혼합 10~15자리 내로 입력해주세요."
+                      onBlur={checkPassword}
+                      value={firstPassword}
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <span>*</span> 비밀번호 확인
+                  </th>
+                  <td>
+                    <input
+                      type="password"
+                      className={styles.input_box}
+                      name=""
+                      value={lastPassword}
+                    />
+                    <button onClick={comparePassword} className={styles.checkbtn}>
+                      비밀번호 확인
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <span>*</span> 휴대폰 번호
+                  </th>
+                  <td>
+                    <input type="text" className={styles.phone_box} /> -
+                    <input
+                      type="text"
+                      className={styles.phone_box}
+                      name="tel_h2_1"
+                    />{" "}
+                    -
+                    <input
+                      type="text"
+                      className={styles.phone_box}
+                      name="tel_h2_2"
+                    />
+                    <button onClick={sendMsg} className={styles.checkbtn}>
+                      인증번호발송
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <span>*</span> 인증번호 입력
+                  </th>
+                  <td>
+                    <input type="text" className={styles.input_box} name="" />
+                    <button onClick={checkMsg} className={styles.checkbtn}>
+                      확인
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <span>*</span> 이메일 입력
+                  </th>
+                  <td>
+                    <input type="text" className={styles.input_box} name="" />
+                    {/* <!-- 해당버튼 클릭시 '인증완료'문구 보이게하기 --> */}
+                    <button onClick={checkEmail} className={styles.checkbtn}>
+                      인증
+                    </button>
+                  </td>
+                </tr>
+              </table>
+            </form>
+            <div className={styles.btn_group}>
+              <NavLink to="/sign-up" className={styles.back_btn}>
+                이전페이지
+              </NavLink>
+              <NavLink to="/join3" className={styles.join_btn}>
+                회원가입
+              </NavLink>
+            </div>
+          </FadeIn>
         </div>
       </main>
     </div>

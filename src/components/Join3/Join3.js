@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Join3.module.css'
+import FadeIn from 'react-fade-in'
 
 function Join3() {
   return (
@@ -15,6 +16,7 @@ function Join3() {
             </ul>
           </div>
 
+          <FadeIn>
           <div className={styles.contents}>
             <div className={styles.contents_box}>
               <img src="img/join_fin.png" alt="체크박스" />
@@ -27,6 +29,7 @@ function Join3() {
               </div>
             </div>
           </div>
+          </FadeIn>
 
           
 

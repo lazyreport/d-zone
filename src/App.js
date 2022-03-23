@@ -82,7 +82,6 @@ export default function App() {
             <Route path='/general/panelsystem-info' element={<PanelSystemInfo />} />
             <Route path='/general/survey-info' element={<SurveyInfo />} />
 
-            <Route path='/join1' element={<Join1 />} />
             <Route path='/join2' element={<Join2_1 />} />
             <Route path='/join3' element={<Join3 />} />
             <Route path="/account/manage" element={<AccManage />} />
