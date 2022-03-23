@@ -90,6 +90,7 @@ th {
 th,
 td {
   border-right: 1px solid #ccc;
+  padding:15px;
 }
 th:last-child {
   border-right: none;
