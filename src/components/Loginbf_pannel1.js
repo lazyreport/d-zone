@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./Loginbf_pannel1.module.css";
 import FadeIn from "react-fade-in"
+import { Link } from "react-router-dom";
+
 
 function Loginbf_pannel1() {
   // 로그인 버튼 클릭 시
@@ -38,7 +40,7 @@ function Loginbf_pannel1() {
         <form name="loginForm">
           <div className={`${styles.row} ${styles.emailRow}`}>
             <label htmlFor="inputEmail" className={styles.label}>
-              <img src="img/pannel1_img.png" className={styles.img}/>
+              <img src="/img/pannel1_img.png" className={styles.img}/>
             </label>
             <div className={styles.col}>
               <input
@@ -53,7 +55,7 @@ function Loginbf_pannel1() {
           </div>
           <div className={`${styles.row} ${styles.usernameRow}`}>
             <label htmlFor="inputUsername" className={styles.label}>
-              <img src="img/pannel1_img.png" className={styles.img}/>
+              <img src="/img/pannel1_img.png" className={styles.img}/>
             </label>
             <div className={styles.col}>
               <input
@@ -75,12 +77,14 @@ function Loginbf_pannel1() {
             >
               아이디발송
             </button>
+            <Link to='/log-in'>
             <button
-              type="cancel"
+              type="button"
               className={`${styles.btn} ${styles.btnPrimary}`}
             >
-              <a href="login.html">취소</a>
+                <a href="login.html">취소</a>
             </button>
+            </Link>
           </div>
         </form>
       </div>

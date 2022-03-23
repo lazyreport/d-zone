@@ -1,8 +1,11 @@
 import React from "react";
 import styles from "./Loginbf_pannel2.module.css";
 import FadeIn from "react-fade-in"
+import { Link } from "react-router-dom";
 
 function Loginbf_pannel2() {
+
+
   // 인증번호 발송
   const certifNumSend = (e) => {
     var findForm = document.findForm;
@@ -19,6 +22,13 @@ function Loginbf_pannel2() {
       
     }
   };
+
+
+  // 인증번호 발송 리랜더링 방지
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  }
+
 
 
   // 인증번호 확인
@@ -44,8 +54,8 @@ function Loginbf_pannel2() {
 
   // 휴대폰 번호 글자수 제한
   const handleOnInput = (e) => {
-    if (e.value.length > e.maxLength) {
-      e.value = e.value.substr(0, e.maxLength);
+    if (e.target.value.length > e.target.maxLength) {
+      e.target.value = e.target.value.slice(0, e.target.maxLength);
     }
   };
 
@@ -127,10 +137,12 @@ function Loginbf_pannel2() {
               <button
                 type="button"
                 className={`${styles.button} ${styles.btn}`}
-                onClick={() => {
+                id="sendMessage"
+                // disabled
+                onClick={(e) => {
                   certifNumSend();
+                  handleSubmit(e);
                   // certifBtnActive();
-                  // return false;
                 }}
               >
                 인증번호 발송
@@ -166,9 +178,11 @@ function Loginbf_pannel2() {
             >
               임시비밀번호 발송
             </button>
-            <button type="cancel" className={styles.btn}>
+            <Link to='/log-in'>
+            <button type="button" className={styles.btn}>
               <a href="login.html">취소</a>
             </button>
+            </Link>
           </div>
           {/* e:btnContainer */}
         </form>
