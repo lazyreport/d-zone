@@ -76,10 +76,11 @@ export default function SignUp({ history }) {
               </ul>
           </form>
         <div className={styles.foot_btn}>
-          <button
+          <Link
           disabled={disabled}
           className={styles.next_btn}
-          onClick={btnClick}
+          to="/join2_1"
+          /* onClick={btnClick} */
           style={
             disabled
               ? { backgroundColor: '#bbb',color: '#fff' }
@@ -87,7 +88,7 @@ export default function SignUp({ history }) {
           }
         >
           확인
-        </button>
+        </Link>
         </div>
           
         </div>
