@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import styles from "./Loginbf_pannel3.module.css";
 import FadeIn from "react-fade-in";
+import { Link } from "react-router-dom";
 
 function Loginbf_pannel3() {
   // button onClick
@@ -201,9 +202,11 @@ function Loginbf_pannel3() {
               >
                 문의신청
               </button>
-              <button type="cancel" className={styles.btn}>
-                <a href="login.html">취소</a>
-              </button>
+              <Link to="/">
+                <button type="cancel" className={styles.btn}>
+                  <a href="login.html">취소</a>
+                </button>
+              </Link>
             </div>
           </form>
         </div>
