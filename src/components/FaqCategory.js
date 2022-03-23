@@ -25,7 +25,7 @@ function FaqCategory() {
   
   return (
     
-    <main className="faq">
+    <div className="faq">
       <FadeIn>
         <div className="inner-box">
           <div id="acco">
@@ -71,7 +71,7 @@ function FaqCategory() {
           </div>
         </div>
       </FadeIn>
-    </main>
+    </div>
   );
 }
 
