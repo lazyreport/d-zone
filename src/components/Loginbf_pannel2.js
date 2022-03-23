@@ -16,19 +16,12 @@ function Loginbf_pannel2() {
     if (!tel1 || !tel2 || !tel3) {
       alert("휴대폰 번호를 모두 입력해주세요.");
     } else {
-      findForm.submit();
+      // findForm.submit();
       alert("입력하신 휴대폰번호로 인증번호가 발송 되었습니다.");
-      return false;
+      // return false;
       
     }
   };
-
-
-  // 인증번호 발송 리랜더링 방지
-  const handleSubmit = (event) => {
-    event.preventDefault();
-  }
-
 
 
   // 인증번호 확인
@@ -39,16 +32,9 @@ function Loginbf_pannel2() {
     if (!codeNumber) {
       alert("올바른 인증번호를 입력해주세요.");
     } else {
-      findForm.submit();  
+      // findForm.submit();  
       alert("인증번호가 확인 되었습니다.");
     }
-  };
-
-
-  // 인증번호 발급 후 확인버튼 활성화
-  const certifBtnActive = () => {
-    const target = document.getElementById("certifBtn");
-    target.disabled = false;
   };
 
 
@@ -141,8 +127,6 @@ function Loginbf_pannel2() {
                 // disabled
                 onClick={(e) => {
                   certifNumSend();
-                  handleSubmit(e);
-                  // certifBtnActive();
                 }}
               >
                 인증번호 발송
@@ -154,7 +138,11 @@ function Loginbf_pannel2() {
           <div className={`${styles.row} ${styles.codeRow}`}>
             <label for="codeNumber" className={styles.label}>인증번호</label>
             <div className={styles.col}>
-              <input type="text" id="codeNumber" className={styles.input} />
+              <input type="number" id="codeNumber" className={`${styles.input} ${styles.codeBox}`}
+              minLength="6" 
+              maxLength="6"
+              onChange={(e)=>{handleOnInput(e);}} 
+              />
               <button
                 type="button"
                 className={`${styles.button} ${styles.btn}`}

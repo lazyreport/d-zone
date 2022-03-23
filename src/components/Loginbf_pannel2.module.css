@@ -65,6 +65,13 @@
   height: 1px;
   background-color: #b1b1b1;
 }
+.loginbf_pannel2 .col .codeBox {
+  text-align: center;
+}
+.loginbf_pannel2 .col .codeBox::-webkit-outer-spin-button,
+.loginbf_pannel2 .col .codeBox::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
 
 /* phoneRow & codeRow */
 .loginbf_pannel2 .phoneRow input::-webkit-outer-spin-button,

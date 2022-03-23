@@ -68,15 +68,15 @@ function Loginbf_pannel1() {
             </div>
           </div>
           <div className={styles.btnContainer}>
-            <button
-              type="submit"
-              className={`${styles.btn} ${styles.btnPrimary}`}
-              onClick={() => {
-                login();
-              }}
-            >
-              아이디발송
-            </button>
+              <button
+                type="submit"
+                className={`${styles.btn} ${styles.btnPrimary}`}
+                onClick={() => {
+                  login();
+                }}
+              >
+                아이디발송
+              </button>
             <Link to='/log-in'>
             <button
               type="button"
