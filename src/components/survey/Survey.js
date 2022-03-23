@@ -13,6 +13,18 @@ import FadeIn from 'react-fade-in';
 function Survey(){
   const [isOpen, setIsOpen] = useState(false);
   const [isSend, setIsSend] = useState(false);
+
+  /* search clear */
+  function searchIpt(){
+    const clear = document.getElementById("txtsearch");
+    clear.value = '';
+  }
+  function searchEnt(){
+    if (window.event.keyCode == 13) {
+      const clears = document.getElementById("txtsearch");
+      clears.value = '';
+    }
+  }
     return( 
       <FadeIn>
       <div className={styles.surveyArea}>
@@ -20,8 +32,8 @@ function Survey(){
           <h2>설문등록 현황조회</h2>
           <div className={styles.searchArea}>
             <section className={styles.searchbox}>
-              <input type="search" className={styles.searchline} />
-              <a href="#" className={styles.searchicon}>
+              <input id="txtsearch" type="search" className={styles.searchline} onKeyUp={searchEnt}/>
+              <a href="#" className={styles.searchicon} onClick={searchIpt}>
                 <FontAwesomeIcon
                   icon={faSearch} 
                 />
@@ -81,7 +93,7 @@ function Survey(){
                   <input className={styles.formCheckInput} type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled />
                 </th>
                 <td>158</td>
-                <td><NavLink to="/registration/marketresearch">비대면 시장조사 필요성 인식 조사</NavLink></td>
+                <td className={styles.pagelink}><NavLink to="/registration/marketresearch">비대면 시장조사 필요성 인식 조사</NavLink></td>
                 <td>2021.09.30 ~ 2021.10.25</td>
                 <td>2,500</td>
                 <td>1,500</td>
