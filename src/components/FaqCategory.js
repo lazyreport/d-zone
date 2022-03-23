@@ -6,6 +6,8 @@ import FaqAccordion from "./FaqAccordion";
 
 
 
+
+
 function FaqCategory() {
   const [data, setData] = useState(FaqCategoryList);
   const filterResult = (catItem) => {
@@ -15,26 +17,43 @@ function FaqCategory() {
     setData(result);
   };
 
+  /* button active */
+  const [active, setActive] = useState(false);
+  const buttonHandler = () => {
+  setActive(!active);
+    };
   
   return (
-    <FadeIn>
-      <main className="faq">
+    
+    <main className="faq">
+      <FadeIn>
         <div className="inner-box">
           <div id="acco">
 
-
-            <div id="myBtnContainer">
-              <button className="btn" onClick= {() => setData(FaqCategoryList)} >
-                전체
+          <div id="myBtnContainer">
+              <button className={active ? "tabs-button active" : "tabs-button deactive"} onClick= {() => {
+                setData(FaqCategoryList)
+                buttonHandler()
+              } } >
+              전체
               </button>
-              <button className="btn" onClick={() => filterResult("카테고리1")}>
-                카테고리1
+              <button className={active ? "tabs-button active" : "tabs-button deactive"} onClick={() => {
+                filterResult("카테고리1")
+                buttonHandler()
+               } }>
+              카테고리1
               </button>
-              <button className="btn" onClick={() => filterResult("카테고리2")}>
-                카테고리2
+              <button className={active ? "tabs-button active" : "tabs-button deactive"} onClick={() => {
+                filterResult("카테고리2")
+                buttonHandler()
+              } }>
+              카테고리2
               </button>
-              <button className="btn" onClick={() => filterResult("카테고리3")}>
-                카테고리3
+              <button className={active ? "tabs-button active" : "tabs-button deactive"} onClick={() => {
+                filterResult("카테고리3")
+                buttonHandler()
+               } }>
+              카테고리3
               </button>
             </div>
 
@@ -51,10 +70,9 @@ function FaqCategory() {
             </ul>
           </div>
         </div>
-      </main>
-    </FadeIn>
+      </FadeIn>
+    </main>
   );
 }
 
 export default FaqCategory;
-
