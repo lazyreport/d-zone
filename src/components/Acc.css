@@ -90,6 +90,7 @@
 
 .acc-tab > li .active {
     display: block;
+    color: #333;
     background-color: #fff;
     border-radius: inherit;
     border: 1px solid #b1b1b1;
