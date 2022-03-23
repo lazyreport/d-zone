@@ -13,6 +13,18 @@ import FadeIn from 'react-fade-in';
 function Survey(){
   const [isOpen, setIsOpen] = useState(false);
   const [isSend, setIsSend] = useState(false);
+
+  /* search clear */
+  function searchIpt(){
+    const clear = document.getElementById("txtsearch");
+    clear.value = '';
+  }
+  function searchEnt(){
+    if (window.event.keyCode == 13) {
+      const clears = document.getElementById("txtsearch");
+      clears.value = '';
+    }
+  }
     return( 
       <FadeIn>
       <div className={styles.surveyArea}>
@@ -20,8 +32,8 @@ function Survey(){
           <h2>설문등록 현황조회</h2>
           <div className={styles.searchArea}>
             <section className={styles.searchbox}>
-              <input type="search" className={styles.searchline} />
-              <a href="#" className={styles.searchicon}>
+              <input id="txtsearch" type="search" className={styles.searchline} onKeyUp={searchEnt}/>
+              <a href="#" className={styles.searchicon} onClick={searchIpt}>
                 <FontAwesomeIcon
                   icon={faSearch} 
                 />
