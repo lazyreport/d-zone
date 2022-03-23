@@ -83,8 +83,7 @@ export default function App() {
             <Route path='/general/survey-info' element={<SurveyInfo />} />
 
             <Route path='/join1' element={<Join1 />} />
-            <Route path='/join2_1' element={<Join2_1 />} />
-            <Route path='/join2_2' element={<Join2_2 />} />
+            <Route path='/join2' element={<Join2_1 />} />
             <Route path='/join3' element={<Join3 />} />
             <Route path="/account/manage" element={<AccManage />} />
             <Route path="/account/create" element={<AccCreate />} />

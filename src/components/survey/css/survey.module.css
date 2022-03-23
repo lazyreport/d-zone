@@ -83,11 +83,11 @@
   border-collapse: collapse;
   font-size: 16px;
 }
-th {
+.surveyArea th {
   border-bottom: 1px solid #ccc;
   padding: 10px;
 }
-th,
+.surveyArea th,
 td {
   border-right: 1px solid #ccc;
   padding:15px;

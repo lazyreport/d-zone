@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretLeft, faCaretRight, faSearch } from "@fortawesome/free-solid-svg-icons";
 import styles from "./survey_overview.module.css";
 import Gnb from "../Gnb";
+import FadeIn from "react-fade-in";
 
 function SurveyOverview() {
   // 테이블 자동생성
@@ -30,7 +31,7 @@ function SurveyOverview() {
   };
 
   const showInfo = ()=>{
-    window.location.replace("/survey-info")
+    window.location.replace("/general/survey-info")
   }
 
 
@@ -38,54 +39,56 @@ function SurveyOverview() {
     <div className={styles.survey_overview}>
       <Gnb />
       <main className={styles.content}>
-        <h2>설문승인 현황조회</h2>
-        <div className={styles.route_box}>
-          <span className={styles.route1}>통합관리</span>
-          <Link to="#" className={styles.route2}>설문승인 현황조회</Link>
+      <h2>설문승인 현황조회</h2>
+        <FadeIn>
+          <div className={styles.route_box}>
+            <span className={styles.route1}>통합관리</span>
+            <Link to="#" className={styles.route2}>설문승인 현황</Link>
+          </div>
+          <div className={styles.search_box}>
+            <input type="text" className={styles.search_box_input} />
+            <Link to="#"><FontAwesomeIcon icon={faSearch} size={'2x'} className={styles.search_icon} /></Link>
         </div>
-        <div className={styles.search_box}>
-          <input type="text" className={styles.search_box_input} />
-          <Link to="#"><FontAwesomeIcon icon={faSearch} size={'2x'} className={styles.search_icon} /></Link>
-      </div>
-        <table className={styles.panel_table}>
-          <caption>설문승인 현황</caption>
-              <colgroup>
-                  <col style={{width: "60px"}} />
-                  <col style={{width: "280px"}} />
-                  <col style={{width: "230px"}} />
-                  <col style={{width: "100px"}} />
-                  <col style={{width: "100px"}} />
-                  <col style={{width: "80px"}} />
-                  <col style={{width: "100px"}} />
-                  <col style={{width: "100px"}} />
-                  <col style={{width: "100px"}} />
-              </colgroup>
-          <thead>
-            <tr>
-              <th scope="col">번호</th>
-              <th scope="col">조사명</th>
-              <th scope="col">조사요청기관</th>
-              <th scope="col">필요샘플 수</th>
-              <th scope="col">완료샘플 수</th>
-              <th scope="col">상태</th>
-              <th scope="col">상태변경일</th>
-              <th scope="col">상태변경자</th>
-              <th scope="col">소속</th>
-            </tr>
-          </thead>
-          <tbody>
-            {makeTableContents(ContentsNum)}
-          </tbody>
-        </table>
-        <div className={styles.controller_box}>
-          <Link to="#" className={styles.btn}><FontAwesomeIcon icon={faCaretLeft} /></Link>
-          <Link to="#">1</Link>
-          <Link to="#">2</Link>
-          <Link to="#">3</Link>
-          <Link to="#">4</Link>
-          <Link to="#">5</Link>
-          <Link to="#" className={styles.btn}><FontAwesomeIcon icon={faCaretRight} /></Link>
-        </div>
+          <table className={styles.panel_table}>
+            <caption>설문승인 현황</caption>
+                <colgroup>
+                    <col style={{width: "60px"}} />
+                    <col style={{width: "280px"}} />
+                    <col style={{width: "230px"}} />
+                    <col style={{width: "100px"}} />
+                    <col style={{width: "100px"}} />
+                    <col style={{width: "80px"}} />
+                    <col style={{width: "100px"}} />
+                    <col style={{width: "100px"}} />
+                    <col style={{width: "100px"}} />
+                </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">번호</th>
+                <th scope="col">조사명</th>
+                <th scope="col">조사요청기관</th>
+                <th scope="col">필요샘플 수</th>
+                <th scope="col">완료샘플 수</th>
+                <th scope="col">상태</th>
+                <th scope="col">상태변경일</th>
+                <th scope="col">상태변경자</th>
+                <th scope="col">소속</th>
+              </tr>
+            </thead>
+            <tbody>
+              {makeTableContents(ContentsNum)}
+            </tbody>
+          </table>
+          <div className={styles.controller_box}>
+            <Link to="#" className={styles.btn}><FontAwesomeIcon icon={faCaretLeft} /></Link>
+            <Link to="#">1</Link>
+            <Link to="#">2</Link>
+            <Link to="#">3</Link>
+            <Link to="#">4</Link>
+            <Link to="#">5</Link>
+            <Link to="#" className={styles.btn}><FontAwesomeIcon icon={faCaretRight} /></Link>
+          </div>
+        </FadeIn>
       </main>
     </div>
   );

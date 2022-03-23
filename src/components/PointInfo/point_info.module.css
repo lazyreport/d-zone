@@ -7,16 +7,45 @@
   position: relative;
   width: 1200px;
   margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 .content h2 {
   text-indent: -9999px;
 }
 
+/* route_box */
+.route_box{
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  margin-top: 10px;
+}
+
+.route1::after{
+  content:">";
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  margin-left: 20px;
+  margin-right: 15px;
+}
+
+.route2{
+  display: inline-block;
+}
+
+.route2:hover{
+  color: #ffc107;
+}
+
+
 .info {
   background-color: #f2f2f2;
   width: 800px;
   padding: 10px;
-  margin: 20px auto 0;
+  margin: 40px auto 0;
   font-size: 16px;
   border-radius: 15px;
 }
@@ -43,24 +72,25 @@
   font-size: 16px;
 }
 .process_select {
-  font-size: 18px;
-  height: 35px;
-  width: 90px;
+  font-size: 16px;
+  height: 30px;
+  width: 80px;
   margin-left: 5px;
   margin-right: 5px;
   outline: transparent;
+  border-radius: 5px;
 }
 .save_btn,
 .list_btn {
   border: transparent;
   background-color: #ffc107;
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
-  margin-left: 5px;
+  margin-left: 10px;
   cursor: pointer;
-  border-radius: 9px;
-  padding: 8px 42px;
+  border-radius: 5px;
+  padding: 4px 36px;
 }
 
 .change_log {

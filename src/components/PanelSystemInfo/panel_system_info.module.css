@@ -14,11 +14,38 @@
   text-indent: -9999px;
 }
 
+/* route_box */
+.route_box{
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  margin-top: 10px;
+}
+
+.route1::after{
+  content:">";
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  margin-left: 20px;
+  margin-right: 15px;
+}
+
+.route2{
+  display: inline-block;
+}
+
+.route2:hover{
+  color: #ffc107;
+}
+
+
 .info {
   background-color: #efefef;
   width: 800px;
   padding: 10px;
-  margin: 20px auto 0;
+  margin: 40px auto 0;
   border-radius: 15px;
 }
 .info td {
@@ -44,6 +71,7 @@
   width: 90px;
   margin-left: 5px;
   outline: transparent;
+  border-radius: 5px;
 }
 .save_btn,
 .list_btn {

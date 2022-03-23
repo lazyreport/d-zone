@@ -79,7 +79,7 @@ export default function SignUp({ history }) {
           <Link
           disabled={disabled}
           className={styles.next_btn}
-          to="/join2_1"
+          to="/join2"
           /* onClick={btnClick} */
           style={
             disabled

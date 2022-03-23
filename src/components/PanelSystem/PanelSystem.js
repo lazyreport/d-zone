@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretLeft, faCaretRight, faSearch } from "@fortawesome/free-solid-svg-icons";
 import styles from "./panel_system.module.css";
 import Gnb from "../Gnb";
+import FadeIn from 'react-fade-in';
 
 
 export const PanelSystem = ()=>{
@@ -31,7 +32,7 @@ export const PanelSystem = ()=>{
   };
 
   const showInfo = ()=>{
-    window.location.replace("/panelsystem-info")
+    window.location.replace("/general/panelsystem-info")
   }
 
 
@@ -40,51 +41,53 @@ export const PanelSystem = ()=>{
       <Gnb />
       <main className={`${styles.content} ${styles.cf}`}>
       <h2>패널인증시스템 신청현황</h2>
-      <div className={styles.route_box}>
-        <span className={styles.route1}>통합관리</span>
-        <Link to="#" className={styles.route2}>패널인증시스템 신청현황</Link>
-      </div>
-      <div className={styles.search_box}>
-        <input type="text" className={styles.search_box_input} />
-        <Link to="#"><FontAwesomeIcon icon={faSearch} size={'2x'} className={styles.search_icon} /></Link>
-      </div>
-      <table className={styles.panel_table}>
-        <caption>패널인증시스템 신청현황</caption>
-            <colgroup>
-                <col style={{width: "100px"}} />
-                <col style={{width: "100px"}} />
-                <col style={{width: "150px"}} />
-                <col style={{width: "250px"}} />
-                <col style={{width: "200px"}} />
-                <col style={{width: "200px"}} />
-                <col style={{width: "200px"}} />
-                <col style={{width: "120px"}} />
-            </colgroup>
-        <thead>
-          <tr>
-            <th scope="col">번호</th>
-            <th scope="col">업체명</th>
-            <th scope="col">연락처</th>
-            <th scope="col">이메일</th>
-            <th scope="col">신청일</th>
-            <th scope="col">상태변경일</th>
-            <th scope="col">상태</th>
-            <th scope="col">상태변경자</th>
-          </tr>
-        </thead>
-        <tbody>
-          {makeTableContents(ContentsNum)}
-        </tbody>
-      </table>
-      <div className={styles.controller_box}>
-        <Link to="#" className={styles.btn}><FontAwesomeIcon icon={faCaretLeft} /></Link>
-        <Link to="#">1</Link>
-        <Link to="#">2</Link>
-        <Link to="#">3</Link>
-        <Link to="#">4</Link>
-        <Link to="#">5</Link>
-        <Link to="#" className={styles.btn}><FontAwesomeIcon icon={faCaretRight} /></Link>
-      </div>
+        <FadeIn>
+          <div className={styles.route_box}>
+            <span className={styles.route1}>통합관리</span>
+            <Link to="#" className={styles.route2}>패널인증시스템 신청현황</Link>
+          </div>
+          <div className={styles.search_box}>
+            <input type="text" className={styles.search_box_input} />
+            <Link to="#"><FontAwesomeIcon icon={faSearch} size={'2x'} className={styles.search_icon} /></Link>
+          </div>
+          <table className={styles.panel_table}>
+            <caption>패널인증시스템 신청현황</caption>
+                <colgroup>
+                    <col style={{width: "100px"}} />
+                    <col style={{width: "100px"}} />
+                    <col style={{width: "150px"}} />
+                    <col style={{width: "250px"}} />
+                    <col style={{width: "200px"}} />
+                    <col style={{width: "200px"}} />
+                    <col style={{width: "200px"}} />
+                    <col style={{width: "120px"}} />
+                </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">번호</th>
+                <th scope="col">업체명</th>
+                <th scope="col">연락처</th>
+                <th scope="col">이메일</th>
+                <th scope="col">신청일</th>
+                <th scope="col">상태변경일</th>
+                <th scope="col">상태</th>
+                <th scope="col">상태변경자</th>
+              </tr>
+            </thead>
+            <tbody>
+              {makeTableContents(ContentsNum)}
+            </tbody>
+          </table>
+          <div className={styles.controller_box}>
+            <Link to="#" className={styles.btn}><FontAwesomeIcon icon={faCaretLeft} /></Link>
+            <Link to="#">1</Link>
+            <Link to="#">2</Link>
+            <Link to="#">3</Link>
+            <Link to="#">4</Link>
+            <Link to="#">5</Link>
+            <Link to="#" className={styles.btn}><FontAwesomeIcon icon={faCaretRight} /></Link>
+          </div>
+        </FadeIn>
     </main>
     </div>
   );
