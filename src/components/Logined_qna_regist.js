@@ -24,7 +24,7 @@ function Logined_qna_regist() {
   return (
     <div>
       <Gnb />
-      <main className={styles.main}>
+      <main className={styles.logined_qna_regist}>
         <div className={styles.container}>
           <div className={styles.qnaRegist}>
             <FadeIn>

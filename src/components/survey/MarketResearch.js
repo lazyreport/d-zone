@@ -5,6 +5,8 @@ import * as Highcharts from 'highcharts';
 import HighchartsReact from "highcharts-react-official";
 import { Link, NavLink } from "react-router-dom";
 import Gnb from '../Gnb'
+import FadeIn from 'react-fade-in';
+
 
 function MarketResearch(){
     const donut1 =  {
@@ -93,8 +95,9 @@ function MarketResearch(){
     };
     return(
         <>
+        <FadeIn>
         <Gnb />
-        <div>
+        <div className={styles.researchWrapper}>
             <div className={styles.marketResearch}>
                 <div className={styles.toparea}>
                     <section className={styles.imgarea}>
@@ -226,6 +229,7 @@ function MarketResearch(){
                 <button className={styles.listBtn}><NavLink to='/registration'>목록</NavLink></button>
             </div>
     </div>
+    </FadeIn>
     </>
     )
 }

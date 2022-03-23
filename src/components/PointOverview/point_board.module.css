@@ -1,0 +1,37 @@
+/* panel_table */
+.panel_table {
+  border: 1px solid #ddd;
+  border-left: transparent;
+  border-right: transparent;
+  text-align: center;
+  margin-top: 20px;
+}
+.panel_table tbody {
+  padding: 10px 0;
+}
+.panel_table th {
+  border: 1px solid #ddd;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 0;
+  text-align: center;
+}
+.panel_table td {
+  border: 1px solid #ddd;
+  font-size: 14px;
+  padding: 8px 0;
+  border-top: transparent;
+  border-bottom: transparent;
+}
+.panel_table thead th:first-child {
+  border-left: transparent;
+}
+.panel_table thead th:last-child {
+  border-right: transparent;
+}
+.panel_table tbody td:first-child {
+  border-left: transparent;
+}
+.panel_table tbody td:last-child {
+  border-right: transparent;
+}

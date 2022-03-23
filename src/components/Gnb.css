@@ -3,7 +3,8 @@
     height: 56px;
     font-size: 16px;
     display: flex;
-    background-color: #333333;
+    background-color: #333;
+    font-weight: bold;
 }
 
 .gnb-nav-list {
@@ -12,8 +13,45 @@
     display: flex;
     justify-content: space-between;
     color: #fff;
+    height: 100%;
+    line-height: 56px;
 }
 
-.gnb .active {
+.gnb-nav-list .depth0{padding: 0 10px;text-align: center;position: relative;}
+
+.depth0:hover{color: #ffc107;}
+
+.activeee {
+    color: #afafaf;
+}
+
+/* 메뉴 사이사이 after | */
+.gnb-nav-list .depth0::after{
+    content: "|";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -12px;
+    color: rgb(145, 145, 145);
+    font-weight: 50;
+}
+
+.gnb-nav-list .depth0:last-child::after{display:none;}
+
+/* submenu */
+.depth1{position: relative;}
+.depth1::after{display: none;}
+.depth1>.dp1::after{content:"";display: none;width: 98px;height: 100%;background-color: rgba(255, 255, 255, 0.2);position: absolute;top: 0;right: -98px;}
+.depth2{position: absolute;top: 56px;left: 0px;z-index: 1;background-color: #fff;border: 1px solid #afafaf;border-top: none;width: calc(100% + 98px);height: auto;display: none;}
+.depth2 .dp2{display: block;font-weight: normal;text-align: center;width: 90%;margin: 0 auto;color: #333;font-size: 14px;border-bottom: 1px solid #afafaf;}
+.depth2 .dp2:last-child{border-bottom: none;}
+
+.depth1:hover{background-color: rgba(255, 255, 255, 0.2);}
+.depth1:hover>.dp1{color: #ffc107;}
+.depth1:hover .depth2{display: block;}
+.depth1:hover>.dp1::after{display: block;}
+.depth2 .dp2:hover{color: #8f8f8f;}
+.gnb .activeee {
     color: #ffc107;
 }

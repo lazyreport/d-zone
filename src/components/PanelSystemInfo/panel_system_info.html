@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>패널인증시스템 신청현황</title>
+  <link rel="stylesheet" href="panel_system_info.css">
+  <link rel="stylesheet" href="../common/common.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <div class="inner-wrap clearfix">
+      <h class="logo">
+        <img src="../../assets/logo_dzone_160x40.png" alt="headerLogo">
+      </h>
+      <ul class="utill clearfix">
+        <li class="call-center"><a href="#"><img src="../../assets/call-center.png"></a></li>
+        <li class="self-point"><a href="#">100point</a></li>
+        <li class="logout"><a href="#">로그아웃</a></li>
+      </ul>
+    </div>
+    </header>
+    <!-- header -->
+    <div class="gnb">
+      <div class="inner-wrap">
+        <ul>
+          <li><a href="#" alt="home">홈</a><span>|</span></li>
+          <li><a href="#" alt="useinfo">이용안내</a><span>|</span></li>
+          <li><a href="#" alt="FAQ">FAQ</a><span>|</span></li>
+          <li><a href="#" alt="Q&A">Q&A</a><span>|</span></li>
+          <li><a href="#" alt="계정설정">계정설정</a><span>|</span></li>
+          <li><a href="#" alt="설문등록/현황조회">설문등록/현황조회</a><span>|</span></li>
+          <li><a href="#" alt="포인트관리">포인트관리</a><span>|</span></li>
+          <li><a href="#" alt="통합관리">통합관리</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- gnb -->
+    <main class="content cf">
+      <h2>패널인증시스템 신청현황 상세정보</h2>
+      <table class="info">
+        <caption>패널인증시스템 신청현황 상세정보</caption>
+          <colgroup>
+            <col style="width: 150px;">
+            <col style="width: 650px;">
+          </colgroup>
+          <tr>
+            <td>업체명</td>
+            <td>주식회사A</td>
+          </tr>
+          <tr>
+            <td>담당자명</td>
+            <td>홍길동</td>
+          </tr>
+          <tr>
+            <td>연락처</td>
+            <td>010-0000-0000</td>
+          </tr>
+          <tr>
+            <td>이메일</td>
+            <td>a@a.com</td>
+          </tr>
+          <tr class="last">
+            <td>신청/문의내용</td>
+            <td>패널인증시스템 신청합니다.</td>
+          </tr>
+      </table>
+      <div class="info_btn_box">
+        <span>상태</span>
+        <select name="process" class="process_select">
+          <option value="reception">접수</option>
+          <option value="proceeding">처리중</option>
+          <option value="complete">완료</option>
+        </select>
+        <button class="save_btn">저장</button>
+        <button class="list_btn">목록</button>
+      </div>
+      <div class="change_log">
+        <p>[기록]</p>
+        <ul class="change_log_list">
+          <li>2021.12.06 13:36 김주리 님이 상태를 접수 에서 처리중 으로 변경하였습니다.</li>
+          <li>2021.12.06 17:55 김주리 님이 상태를 처리중 에서 완료 로 변경하였습니다.</li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-box clearfix">
+        <img src="../../assets/logo_dzone_footer.png" alt="f_logo">
+        <p>
+          서울특별시 구로구 디지털로33 55 E&C벤처드림타워 2차 1001호<br>
+          COPYRIGHT(C) 2018 Digitalzone CO., LTD. ALL RIGHTS RESERVED.
+        </p>
+      </div>
+    </footer>
+    <!-- footer -->
+  </div>
+  <!-- wrap -->
+  
+</body>
+</html>

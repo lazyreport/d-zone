@@ -6,6 +6,7 @@ import '../../reset.css';
 import { Link } from "react-router-dom";
 import Gnb from '../Gnb'
 import {useState, useCallback} from 'react';
+import FadeIn from 'react-fade-in';
 
 function SurveyModify(){
     /* 태그 생성 */
@@ -31,9 +32,9 @@ function SurveyModify(){
     function deleteTagthree(index){
         setTagthree(tagthree.filter((el,i)=>i !== index))
     }
-
     return(
         <>
+        <FadeIn>
         <Gnb />
         <div className={styles.modifybox}>
             <form className={styles.form}>
@@ -55,12 +56,10 @@ function SurveyModify(){
                     <dt><span>발송패널 수</span></dt>
                     <dd>
                         <div className={styles.fileuploadArea}>
-                            <label htmlFor="upload_btn" className="filebtn">파일 등록</label>
-                            <input type="file" id="upload_btn" accept=".xls,.xlsx" className={styles.fileuploadBtn}  />
-                            <span className={styles.uploadName}></span>
-                        </div> 
+                            <label for="fileup">파일등록</label>
+                            <input type="file" id="fileup" accept=".xls,.xlsx" className={styles.uploadButton} />
+                        </div>
                         <p>12,500건</p>
-                        
                     </dd>
                 </dl>
                 <dl className={styles.dl5}>
@@ -180,9 +179,10 @@ function SurveyModify(){
             </form>
             <section className={styles.btnArea}>
                 <button className={styles.saveBtn} onClick={()=>{alert('저장되었습니다.')}}><Link to='/registration'>저장</Link></button>
-                <button className={styles.cancelBtn} onClick={()=>{alert('변경사항이 저장되지 않습니다.')}}><Link to='/marketresearch'>취소</Link></button>
+                <button className={styles.cancelBtn} onClick={()=>{alert('변경사항이 저장되지 않습니다.')}}><Link to='/registration/marketresearch'>취소</Link></button>
             </section>
         </div>
+        </FadeIn>
         </>
     )
 }

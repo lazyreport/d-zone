@@ -1,8 +1,11 @@
 import React from "react";
 import styles from "./Loginbf_pannel2.module.css";
 import FadeIn from "react-fade-in"
+import { Link } from "react-router-dom";
 
 function Loginbf_pannel2() {
+
+
   // 인증번호 발송
   const certifNumSend = (e) => {
     var findForm = document.findForm;
@@ -19,6 +22,13 @@ function Loginbf_pannel2() {
       
     }
   };
+
+
+  // 인증번호 발송 리랜더링 방지
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  }
+
 
 
   // 인증번호 확인
@@ -44,8 +54,8 @@ function Loginbf_pannel2() {
 
   // 휴대폰 번호 글자수 제한
   const handleOnInput = (e) => {
-    if (e.value.length > e.maxLength) {
-      e.value = e.value.substr(0, e.maxLength);
+    if (e.target.value.length > e.target.maxLength) {
+      e.target.value = e.target.value.slice(0, e.target.maxLength);
     }
   };
 
@@ -70,7 +80,7 @@ function Loginbf_pannel2() {
 
   
   return (
-    <main>
+    <main className={styles.loginbf_pannel2}>
       <FadeIn>
       <div>
         <h2 className={styles.pannelText}>비밀번호 찾기</h2>
@@ -83,27 +93,27 @@ function Loginbf_pannel2() {
       <div className={styles.content}>
         <form name="findForm">
           <div className={`${styles.row} ${styles.emailRow}`}>
-            <label for="inputEmail">이메일</label>
+            <label for="inputEmail" className={styles.label}>이메일</label>
             <div className={styles.col}>
-              <input type="email" id="inputEmail" required />
+              <input type="email" id="inputEmail" className={styles.input} required />
             </div>
           </div>
           {/* e:emailRow */}
 
           <div className={`${styles.row} ${styles.usernameRow}`}>
-            <label for="inputUsername">아이디</label>
+            <label for="inputUsername" className={styles.label}>아이디</label>
             <div className={styles.col}>
-              <input type="text" id="inputUsername" required />
+              <input type="text" id="inputUsername"  className={styles.input} required />
             </div>
           </div>
           {/* e:usernameRow */}
 
           <div className={`${styles.row} ${styles.phoneRow}`}>
-            <label for="phoneNumber">휴대폰번호</label>
+            <label for="phoneNumber" className={styles.label}>휴대폰번호</label>
             <div className={styles.col}>
               <input
                 type="number"
-                className={styles.phoneBox}
+                className={`${styles.input} ${styles.phoneBox}`}
                 maxLength="3"
                 onChange={(e)=>{handleOnInput(e);}}
                 id="tel1"
@@ -111,7 +121,7 @@ function Loginbf_pannel2() {
               <div className={styles.hipen}></div>
               <input
                 type="number"
-                className={styles.phoneBox}
+                className={`${styles.input} ${styles.phoneBox}`}
                 maxLength="4"
                 onChange={(e)=>{handleOnInput(e);}}
                 id="tel2"
@@ -119,18 +129,20 @@ function Loginbf_pannel2() {
               <div className={styles.hipen}></div>
               <input
                 type="number"
-                className={styles.phoneBox}
+                className={`${styles.input} ${styles.phoneBox}`}
                 maxLength="4"
                 onChange={(e)=>{handleOnInput(e);}}
                 id="tel3"
               />
               <button
                 type="button"
-                className={styles.btn}
-                onClick={() => {
+                className={`${styles.button} ${styles.btn}`}
+                id="sendMessage"
+                // disabled
+                onClick={(e) => {
                   certifNumSend();
+                  handleSubmit(e);
                   // certifBtnActive();
-                  // return false;
                 }}
               >
                 인증번호 발송
@@ -140,12 +152,12 @@ function Loginbf_pannel2() {
           {/* e:phoneRow */}
 
           <div className={`${styles.row} ${styles.codeRow}`}>
-            <label for="codeNumber">인증번호</label>
+            <label for="codeNumber" className={styles.label}>인증번호</label>
             <div className={styles.col}>
-              <input type="text" id="codeNumber" />
+              <input type="text" id="codeNumber" className={styles.input} />
               <button
                 type="button"
-                className={styles.btn}
+                className={`${styles.button} ${styles.btn}`}
                 id="certifBtn"
                 // disabled
                 onClick={() => {
@@ -166,9 +178,11 @@ function Loginbf_pannel2() {
             >
               임시비밀번호 발송
             </button>
-            <button type="cancel" className={styles.btn}>
+            <Link to='/log-in'>
+            <button type="button" className={styles.btn}>
               <a href="login.html">취소</a>
             </button>
+            </Link>
           </div>
           {/* e:btnContainer */}
         </form>

@@ -24,7 +24,7 @@ function Main_live() {
       const onIntersect =  (entrys, observer) => {
         entrys.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('active');
+                entry.target.classList.add('fadeActive');
                 observer.unobserve(entry.target); // 관찰 취소
             }
         });
@@ -100,7 +100,7 @@ function Main_live() {
               <div className="text-box-2">
                 <p>도입 관련하여 궁금하신 점을 자세히 알아보고 패널인증시스템을 신청하세요.</p>
               </div>
-              <div className="pannel-btn"><Link to="/sign-up">패널인증시스템 신청하기</Link></div>
+              <div className="pannel-btn"><Link to="/request-pannel-certif">패널인증시스템 신청하기</Link></div>
             </div>
           </div>
     

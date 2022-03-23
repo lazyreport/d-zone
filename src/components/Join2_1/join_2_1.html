@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>join_2</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/join_2_1.css">
+  <link rel="stylesheet" href="css/common.css">
+
+
+
+</head>
+<body>
+
+  <div id="wrap">
+
+    <header>
+        <div class="inner-wrap clearfix">
+          <h1 class="logo">
+            <img src="./img/logo_dzone_160x40.png" alt="headerLogo" />
+          </h1>
+          <ul class="utill clearfix">
+            <li class="call-center">
+              <a href="#"><img src="img/call-center.png" /></a>
+            </li>
+            <li class="self-point"><a href="#">point</a></li>
+            <li class="logout"><a href="#">로그인</a></li>
+          </ul>
+        </div>
+      </header>
+
+<!--       <div class="gnb">
+        <div class="inner-wrap">
+        <ul>
+            <li><a href="#" alt="home">홈</a><span>|</span></li>
+            <li><a href="#" alt="useinfo">이용안내</a><span>|</span></li>
+            <li><a href="#" alt="FAQ">FAQ</a><span>|</span></li>
+            <li><a href="#" alt="Q&A">Q&A</a><span>|</span></li>
+            <li><a href="#" class="active" alt="계정설정">계정설정</a><span>|</span></li>
+            <li><a href="#" alt="설문등록/현황조회">설문등록/현황조회</a><span>|</span></li>
+            <li><a href="#" alt="포인트관리">포인트관리</a><span>|</span></li>
+            <li><a href="#" alt="통합관리">통합관리</a></li>
+        </ul>
+        </div>
+    </div> -->
+
+
+    <main>
+    <div class="inner-box">
+        <h2>회원가입</h2>
+        <div class="step-box">
+          <ul>
+              <li>Step1. 약관 동의<img src="./img/step1.png" alt="동의"></li>
+              <li class="on">Step2. 정보 입력<img src="./img/step1.png" alt="입력"></li>
+              <li>Step3. 가입 완료<img src="./img/step1.png" alt="완료"></li>
+          </ul>
+        </div>
+
+        <h4>기본정보입력<span>(*필수)</span></h4>
+
+
+        <form name="write_form_member" method="post">
+          <table>
+            <tr>
+              <!-- 회원구분 옆에 물음표 추가하여 가이드라인 띄우기 -->
+                <th><span>*</span> 회원구분</th>
+                  <td class="s">
+                    <!-- toggle로 내용구분 -->
+                    <input type="radio" name="chk_member" checked> 개인회원
+                    <input type="radio" name="chk_member" class="chk_member"> 법인회원
+                  </td>
+            </tr>
+            <tr>
+              <th><span>*</span> 아이디</th>
+              <td>
+              <input type="text" name="cursor:pointer" class="input-box">
+              <!-- alert 창 띄우기 -->
+              <a href='#'>중복확인</a>
+              </td>
+            </tr>
+            <tr>
+              <th><span>*</span> 사용자 이름</th>
+              <td>
+              <input type="text" class="input-box" name="">
+              </td>
+            </tr>
+            <tr>
+              <th><span>*</span> 비밀번호 입력</th>
+              <td><input type="password" name="" class="input-box" placeholder=" 영문 대소문자/숫자 혼합 10~15자리 내로 입력해주세요."/>
+              <a href='#' class="eye-btn"></a></td>
+            </tr>
+            <tr>
+              <th><span>*</span> 비밀번호 확인</th>
+              <td><input type="password" class="input-box" name="">
+              <a href='#' class="eye-btn"></a></td>
+            </tr>
+              <tr>
+              <th><span>*</span> 휴대폰 번호</th>
+                <td><input type="text" class="phone-box"> -
+                    <input type="text" class="phone-box" name="tel_h2_1"> -
+                    <input type="text" class="phone-box"  name="tel_h2_2">
+                    <a href='#'>인증번호발송</a>
+                </td>
+              </tr>
+              <tr>
+                <th><span>*</span> 인증번호 입력</th>
+                <td>
+                <input type="text" class="input-box" name="">
+                <a href='#'>확인</a>
+                </td>
+              </tr>
+              <tr>
+                <th><span>*</span> 이메일 입력</th>
+                <td>
+                <input type="text" class="input-box" name="">
+                <!-- 해당버튼 클릭시 '인증완료'문구 보이게하기 -->
+                <a href='#'>인증</a>
+                </td>
+              </tr>
+                </table>
+              </td>
+            </tr>          
+
+          </form>            
+          <div class="btn-group">
+            <a href="join_1.html" class="back-btn">이전페이지</a>
+            <a href="join_3.html" class="join-btn">회원가입</a>
+          </div>
+
+
+      </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-box clearfix">
+        <img src="./img/logo_dzone_footer.png" alt="f_logo" />
+        <p>
+            서울특별시 구로구 디지털로33 55 E&C벤처드림타워 2차 1001호<br />
+            COPYRIGHT(C) 2018 Digitalzone CO., LTD. ALL RIGHTS RESERVED.
+        </p>
+        </div>
+    </footer>
+
+  </div>
+  
+</body>
+</html>

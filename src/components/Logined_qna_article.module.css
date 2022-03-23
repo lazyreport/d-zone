@@ -1,97 +1,97 @@
-main {
+.logined_qna_article {
   width: fit-content;
   min-height: calc(100vh - 221px);
   margin: 68px auto 147px auto;
 }
 
 /* container */
-.container {
-  width: 1100px;
+.logined_qna_article .container {
+  width: 1000px;
   margin: auto;
 }
 
 /* pannel-category */
-.pannelCategory {
+.logined_qna_article .pannelCategory {
   margin-bottom: 62px;
   color: #333;
 }
-.pannelCategory h2 {
-  font-size: 16px;
+.logined_qna_article .pannelCategory .pannelTitle {
+  font-size: 30px;
   font-weight: bold;
 }
-.pannelCategory span {
+.logined_qna_article .pannelCategory .span {
   margin: 0 27px 0 27px;
 }
 
 /* table */
-.article table {
+.logined_qna_article .article .table {
   width: 100%;
   height: 67px;
   border-top: 3px solid #333;
   border-collapse: collapse;
 }
-.article table th {
+.logined_qna_article .article .table .th {
   /* padding: 10px; */
   font-size: 18px;
   font-weight: normal;
   margin: 24px 0 24px 0;
 }
-.article table th:first-child {
+.logined_qna_article .article .table .th:first-child {
   border-left: none;
 }
-.article table .articleNum {
+.logined_qna_article .article .table .articleNum {
   width: 14%;
   table-layout: fixed;
 }
-.article table .articleTitle {
+.logined_qna_article .article .table .articleTitle {
   font-weight: bold;
 }
-.article table .articleWritter {
+.logined_qna_article .article .table .articleWritter {
   width: 14%;
 }
-.article table .articleDate {
+.logined_qna_article .article .table .articleDate {
   width: 16%;
 }
 
 /* content */
-.content {
+.logined_qna_article .content {
   font-size: 17px;
   min-height: 300px;
   border-top: 1px solid #333;
   padding: 35px 40px 35px 40px;
 }
-.content span {
+.logined_qna_article .content .span {
   line-height: 25px;
 }
 
 /* comment */
-.comment {
+.logined_qna_article .comment {
   border-top: 1px solid #333;
   display: flex;
   align-items: center;
   border-bottom: none;
 }
-.commentUserInfo {
+.logined_qna_article .commentUserInfo {
   margin: 20px;
 }
-.commentUserInfo img {
+.logined_qna_article .commentUserInfo img {
   width: 29px;
   height: 29px;
 }
-.commentUserInfo .admin {
+.logined_qna_article .commentUserInfo .admin {
   font-weight: bold;
   margin-left: 8px;
 }
-.commentUserInfo .date {
+.logined_qna_article .commentUserInfo .date {
   margin-left: 18px;
 }
-.commentUserInfo .time {
+.logined_qna_article .commentUserInfo .time {
   margin-left: 8px;
 }
-.commentBtn {
+.logined_qna_article .commentBtn {
   margin-left: 16px;
 }
-.commentBtn .btn {
+.logined_qna_article .commentBtn .btn {
   width: 50px;
   height: 20px;
   background-color: #fff;
@@ -101,29 +101,29 @@ main {
   color: #333;
   cursor: pointer;
 }
-.commentBtn .btn:hover{
+.logined_qna_article .commentBtn .btn:hover{
   background-color: #333;
   color: #fff;
 }
-.commentBtn .delete {
+.logined_qna_article .commentBtn .delete {
   margin-left: 8px;
 }
 
 /* comment-content */
-.replyContent {
+.logined_qna_article .replyContent {
   margin-top: 19px;
   margin-bottom: 32px;
 }
-.replyContent {
+.logined_qna_article .replyContent {
   display: block;
 }
-.replyContent span {
+.logined_qna_article .replyContent span {
   margin-left: 20px;
   margin-bottom: 20px;
 }
 
 /* reply-regist */
-.replyRegist {
+.logined_qna_article .replyRegist {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -131,19 +131,19 @@ main {
   border-bottom: 1px solid #333;
   padding: 22px 0 22px 0;
 }
-.replyRegist .formControl {
+.logined_qna_article .replyRegist .formControl {
   resize: none;
-  width: 904px;
+  width: 804px;
   height: 70px;
   line-height: 15px;
   padding: 5px 10px 10px 5px;
   border-color: #b1b1b1;
   margin-bottom: 0;
 }
-.replyRegist span {
+.logined_qna_article .replyRegist span {
   color: #333;
 }
-.replyRegist .replyConfirm .btn {
+.logined_qna_article .replyRegist .replyConfirm .btn {
   width: 52px;
   height: 47px;
   cursor: pointer;
@@ -152,18 +152,18 @@ main {
   border: 1px solid #b1b1b1;
   border-radius: 5px;
 }
-.replyRegist .replyConfirm .btn:hover{
+.logined_qna_article .replyRegist .replyConfirm .btn:hover{
   background-color: #333;
   color: #fff;
 }
 
 /* modify btn */
-.modifyButton {
+.logined_qna_article .modifyButton {
   display: flex;
   justify-content: flex-end;
   margin-top: 33px;
 }
-.modifyButton .btn {
+.logined_qna_article .modifyButton .btn {
   margin-right: 21px;
   border: none;
   border-radius: 5px;
@@ -175,11 +175,11 @@ main {
   font-weight: bold;
   color: #333;
 }
-.modifyButton .btn:hover{
+.logined_qna_article .modifyButton .btn:hover{
   background-color: #fff;
   color: #ffc107;
   border: 1px solid #ffc107;
 }
-.modifyButton .list {
+.logined_qna_article .modifyButton .list {
   margin-right: 0;
 }

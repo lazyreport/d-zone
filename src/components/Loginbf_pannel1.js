@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./Loginbf_pannel1.module.css";
 import FadeIn from "react-fade-in"
+import { Link } from "react-router-dom";
+
 
 function Loginbf_pannel1() {
   // 로그인 버튼 클릭 시
@@ -26,7 +28,7 @@ function Loginbf_pannel1() {
   }
 
   return (
-    <main>
+    <main className={styles.loginbf_pannel1}>
       <FadeIn>
       <div className={styles.pannel}>
         <h2 className={styles.pannelText}>아이디 찾기</h2>
@@ -37,13 +39,14 @@ function Loginbf_pannel1() {
       <div className={styles.content}>
         <form name="loginForm">
           <div className={`${styles.row} ${styles.emailRow}`}>
-            <label htmlFor="inputEmail">
-              <img src="img/pannel1_img.png" />
+            <label htmlFor="inputEmail" className={styles.label}>
+              <img src="/img/pannel1_img.png" className={styles.img}/>
             </label>
             <div className={styles.col}>
               <input
                 type="email"
                 id="inputEmail"
+                className={styles.input}
                 placeholder="이메일"
                 required
                 onFocus={(e)=>{highLight(e)}}
@@ -51,13 +54,14 @@ function Loginbf_pannel1() {
             </div>
           </div>
           <div className={`${styles.row} ${styles.usernameRow}`}>
-            <label htmlFor="inputUsername">
-              <img src="img/pannel1_img.png" />
+            <label htmlFor="inputUsername" className={styles.label}>
+              <img src="/img/pannel1_img.png" className={styles.img}/>
             </label>
             <div className={styles.col}>
               <input
                 type="text"
                 id="inputUsername"
+                className={styles.input}
                 placeholder="사용자명"
                 required
               />
@@ -73,12 +77,14 @@ function Loginbf_pannel1() {
             >
               아이디발송
             </button>
+            <Link to='/log-in'>
             <button
-              type="cancel"
+              type="button"
               className={`${styles.btn} ${styles.btnPrimary}`}
             >
-              <a href="login.html">취소</a>
+                <a href="login.html">취소</a>
             </button>
+            </Link>
           </div>
         </form>
       </div>

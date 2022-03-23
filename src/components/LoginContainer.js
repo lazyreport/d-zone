@@ -22,9 +22,9 @@ function LoginContainer() {
             <li><a href="#">비밀번호 찾기</a></li>
             </Link>
             <li><span>|</span></li>
-            <li><a href="./pages/SignUp.js">회원가입</a></li>
+            <li><Link to="/sign-up">회원가입</Link></li>
           </ul>
-          <button type="submit" id="pannel-button"><Link to="">패널인증시스템</Link></button>
+          <button type="submit" id="pannel-button"><Link to="/request-pannel-certif">패널인증시스템</Link></button>
         </form>
       </div>
       <ul className="bg-bubbles">

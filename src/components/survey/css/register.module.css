@@ -1,6 +1,6 @@
 /* 타이틀 박스 */
 .registerArea {
-  width: 1200px;
+  width: 880px;
   margin: auto;
   color: #333;
 }
@@ -14,7 +14,11 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
-  padding: 29px 0 25px;
+  padding: 29px 0 25px 70px;
+  
+}
+.titletext span{
+  color:#333;
 }
 .xbox {
   background-color: #fff;
@@ -48,7 +52,7 @@ input:focus {
 .dl3,
 .dl4 {
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-size: 17px;
 }
 .dl5 {
@@ -62,11 +66,17 @@ input:focus {
   line-height: 1.2;
   font-weight: 700;
 }
+.dl1 dt span{
+  color: #333;
+}
 .dl2 dt {
   width: 120px;
   font-size: 17px;
   line-height: 1.2;
   font-weight: 700;
+}
+.dl2 dt span{
+  color: #333;
 }
 .dl3 dt {
   width: 300px;
@@ -75,12 +85,16 @@ input:focus {
   font-weight: 700;
   display: flex;
 }
+.dl3 dt span{
+  color: #333;
+}
 .dl3 dd {
   display: flex;
 }
 .dl3 dt span {
   display: inline-block;
   width: 120px;
+  margin-left:0;
 }
 .dl3 dd span {
   display: inline-block;
@@ -88,12 +102,16 @@ input:focus {
   font-size: 17px;
   line-height: 1.2;
   font-weight: 700;
+  color: #333;
 }
 .dl4 dt {
   width: 120px;
   font-size: 17px;
   line-height: 1.2;
   font-weight: 700;
+}
+.dl4 dt span{
+  color: #333;
 }
 .dl4 dd {
   display: flex;
@@ -103,12 +121,20 @@ input:focus {
 }
 .dl4 dd p {
   font-size: 17px;
+  padding-top: 0;
 }
 .dl5 dt {
   width: 120px;
   font-size: 17px;
   line-height: 1.2;
   font-weight: 700;
+}
+.dl5 dt span{
+  color: #333;
+}
+.dataarea span{
+  color: #333;
+  padding: 0 5px;
 }
 /* dl 길이*/
 .dl1 dd input {

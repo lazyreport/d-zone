@@ -1,0 +1,140 @@
+@import url(../common/reset.css);
+
+/* content */
+.content {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+.content h2 {
+  text-indent: -9999px;
+}
+
+/* route_box */
+.route_box{
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  margin-top: 10px;
+}
+
+.route1::after{
+  content:">";
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  margin-left: 20px;
+  margin-right: 15px;
+}
+
+.route2{
+  display: inline-block;
+}
+
+.route2:hover{
+  color: #ffc107;
+}
+
+
+.container {
+  margin-bottom: 50px;
+}
+
+.client_info {
+  background-color: #f2f2f2;
+  width: 360px;
+  padding: 10px;
+  margin: 30px auto 50px;
+  float: left;
+  position: relative;
+  border-radius: 15px;
+}
+.client_info td {
+  padding: 20px;
+  border-bottom: 1px solid #999;
+}
+.client_info td:first-child {
+  font-weight: bold;
+}
+.client_info .last td {
+  border-bottom: transparent;
+}
+
+.survey_info {
+  float: right;
+  width: 600px;
+  padding: 15px 50px 80px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+.survey_info ul {
+  line-height: 1.8;
+}
+.survey_info li {
+  list-style: disc;
+  list-style-position: inside;
+}
+.survey_profile > a {
+  display: inline-block;
+  padding: 2px 15px;
+  border: 1px solid #999;
+  color: #999;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.survey_point {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 60px;
+}
+
+.state_box {
+  position: absolute;
+  right: 100px;
+  top: 350px;
+}
+
+.state_process_box {
+  margin-right: 15px;
+  float: left;
+}
+.state_process_box .process_select {
+  font-size: 16px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.state_process_box input {
+  width: 180px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.state_btn_box {
+  float: right;
+}
+.save_btn,
+.list_btn {
+  width: 130px;
+  height: 42px;
+  border: transparent;
+  background-color: #ffc107;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 9px;
+  margin-left: 5px;
+}
+
+.change_log {
+  clear: both;
+  width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  padding-bottom: 40px;
+}
+.change_log_list li {
+  list-style: disc;
+  list-style-position: inside;
+}

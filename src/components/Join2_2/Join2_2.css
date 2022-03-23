@@ -1,0 +1,227 @@
+@charset "utf-8";
+
+#wrap {
+  width: 100%;
+  min-width: 1200px;
+}
+.inner-box {
+  width: 100%;
+  margin: auto;
+}
+
+main {
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+h2 {
+  color: #0c2461;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+/* top btn */
+.step-box {
+  width: 1000px;
+  height: 100px;
+  margin: auto;
+}
+.step-box ul {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+.step-box ul li {
+  /* height: 45px;*/
+  width: 230px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #9e9e9e;
+  border-radius: 7px;
+  position: relative;
+  /* background-color: #f2f2f2;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em; */
+}
+
+.step-box ul li img{
+  width: 60px;
+  height: auto;
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: grayscale(1);
+  z-index: 1;
+}
+
+.step-box ul li::after{
+  content:' ';
+  display: block;
+  width: 300px;
+  height: 3px;
+  background-color: #9e9e9e;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 회원가입 과정 스텝 켜지기 */
+.step-box ul li.on {
+  /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  border-radius: 7px;
+  background-color: #7ed5dfa7; */
+  color: #fa8231;
+}
+
+.step-box ul li.on img{filter: none;}
+.step-box ul li.on::after{background-color: #fa8231;}
+
+
+/* form */
+.write_form_member {
+  width: 800px;
+  margin: auto;
+}
+
+h4 {
+  width: 800px;
+  margin: 10px auto;
+  font-weight: bold;
+  padding-bottom: 10px;
+  letter-spacing: 1.7px;
+}
+span {
+  font-weight: bold;
+  margin-left: 5px;
+  color: #b33939;
+}
+
+form {
+  width: 800px;
+  margin: auto;
+}
+table {
+  width: 100%;
+}
+
+table a {
+  display: block;
+  width: 120px;
+  height: 36px;
+  border-radius: 5px;
+  font-size: 13px;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+  background-color: #ffc107;
+}
+table td a {
+  float: right;
+  margin: 2px 20px auto 0;
+}
+
+table tr {
+  height: 60px;
+}
+
+table th {
+  width: 200px;
+  text-align: left;
+  text-indent: 5px;
+  font-size: 17px;
+}
+
+table th span {
+  color: #b33939;
+  margin-right: 3px;
+}
+
+table td {
+  padding-left: 20px;
+}
+.s .chk_member {
+  margin-left: 20px;
+}
+
+/* company-input */
+.select-box{
+  height: 35px !important; margin: 15px 0 0 0;
+}
+table ul {
+  width: 100%; height: 50px;
+  margin: auto 0; display: flex;
+  justify-content: space-between;
+}
+
+.input-group li{
+  font-size: 14px;
+  line-height: 40px;
+  display: inline-block;
+}
+.input-group li input {
+  display: inline-block;
+  width: 120px; margin: 0;
+} 
+
+/* eye-btn */
+.eye-btn {
+  display: block;
+  width: 50px;
+  height: 36px;
+  border-radius: 5px;
+  background-color: #999;
+  margin-right: 110px;
+}
+
+/* input width */
+.input-box, .company-input {
+  width: 400px;
+  height: 40px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+}
+.phone-box {
+  width: 100px;
+  height: 40px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+}
+
+/* bottom btn */
+.btn-group {
+  width: 420px;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+}
+.btn-group a {
+  display: block;
+  width: 200px;
+  height: 45px;
+  line-height: 40px;
+  border: solid 1.5px #333;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-sizing: border-box;
+}
+.btn-group .back-btn {
+  background-color: #fff;
+  color: #333;
+}
+.btn-group .join-btn {
+  background-color: #333;
+  color: #fff;
+}

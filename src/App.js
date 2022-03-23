@@ -16,6 +16,17 @@ import Registration from "./components/pages/Registration";
 import Points from "./components/pages/Points";
 import General from "./components/pages/General";
 import UserGuide from "./components/pages/UserGuide";
+import PanelSystem from "./components/PanelSystem/PanelSystem";
+import PointOverview from "./components/PointOverview/PointOverview";
+import PointBoard2 from "./components/PointOverview/PointBoard2";
+import SurveyOverview from "./components/SurveyOverview/SurveyOverview";
+import PointInfo from "./components/PointInfo/PointInfo";
+import PanelSystemInfo from "./components/PanelSystemInfo/PanelSystemInfo";
+import SurveyInfo from "./components/SurveyInfo/SurveyInfo";
+import Join1 from "./components/Join1/Join1";
+import Join2_1 from "./components/Join2_1/Join2_1";
+import Join2_2 from "./components/Join2_2/Join2_2";
+import Join3 from "./components/Join3/Join3";
 import Information from "./components/pages/Information";
 
 import AccManage from "./components/AccManage";
@@ -62,6 +73,19 @@ export default function App() {
             <Route path='/points' element={<Points />} />
             <Route path='/general' element={<General />} />
             <Route path='/user-guide' element={<UserGuide />} />
+            <Route path='/panel-system' element={<PanelSystem />} />
+            <Route path='/point-overview' element={<PointOverview />}>
+              {/* <Route path='/2' element={<PointBoard2 />} /> */}
+            </Route>
+            <Route path='/survey-overview' element={<SurveyOverview />} />
+            <Route path='/point-info' element={<PointInfo />} />
+            <Route path='/panelsystem-info' element={<PanelSystemInfo />} />
+            <Route path='/survey-info' element={<SurveyInfo />} />
+
+            <Route path='/join1' element={<Join1 />} />
+            <Route path='/join2_1' element={<Join2_1 />} />
+            <Route path='/join2_2' element={<Join2_2 />} />
+            <Route path='/join3' element={<Join3 />} />
             <Route path="/account/manage" element={<AccManage />} />
             <Route path="/account/create" element={<AccCreate />} />
             <Route path='/registration/surveymodify' element={<SurveyModify />} />

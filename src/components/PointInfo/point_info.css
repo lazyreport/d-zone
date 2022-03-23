@@ -1,0 +1,72 @@
+@import url(../common/reset.css);
+
+
+
+/* content */
+.content {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+.content h2 {
+  text-indent: -9999px;
+}
+
+.info {
+  background-color: #f2f2f2;
+  width: 800px;
+  padding: 10px;
+  margin: 20px auto 0;
+  font-size: 16px;
+  border-radius: 15px;
+}
+.info td {
+  padding: 20px 25px;
+  border-bottom: 1px solid #999;
+}
+.info td:first-child {
+  font-weight: bold;
+}
+.info .last td {
+  border-bottom: transparent;
+}
+
+.info_btn_box {
+  width: 800px;
+  text-align: right;
+  margin: 0 auto;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.process_select {
+  font-size: 18px;
+  height: 35px;
+  width: 90px;
+  margin-left: 5px;
+  outline: transparent;
+}
+.save_btn,
+.list_btn {
+  width: 130px;
+  height: 42px;
+  border: transparent;
+  background-color: #ffc107;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 5px;
+  cursor: pointer;
+  border-radius: 9px;
+}
+
+.change_log {
+  width: 800px;
+  margin: 15px auto;
+  line-height: 1.6;
+  padding-bottom: 20px;
+}
+.change_log_list li {
+  list-style: disc;
+  list-style-position: inside;
+}

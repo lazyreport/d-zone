@@ -1,11 +1,11 @@
 import React from "react";
 import Gnb from "../Gnb";
+import PanelSystem from '../PanelSystem/PanelSystem'
 
 export default function General() {
   return (
     <div className="general">
-      <Gnb />
-      <h1>General Management</h1>
+      <PanelSystem />
     </div>
   );
 }
