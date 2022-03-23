@@ -166,9 +166,11 @@ function Loginbf_pannel2() {
             >
               임시비밀번호 발송
             </button>
+            <Link to='/log-in'>
             <button type="button" className={styles.btn}>
               <a href="login.html">취소</a>
             </button>
+            </Link>
           </div>
           {/* e:btnContainer */}
         </form>
