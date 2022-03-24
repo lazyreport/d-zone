@@ -21,7 +21,7 @@ export default function Logined_qna_board() {
           <td scope="row" className={styles.td}>{i}</td>
           <td className={styles.td}>
             <Link to='/QA/qna_article'>
-            <a href="#" className={styles.a}>Q&A 게시판 ({replyNumber})</a>
+            <a href="#" className={styles.a}>Q&A 게시판 {(i % 6) === 0 ? `(${replyNumber})` : ''}</a>
             </Link>
           </td>
           <td className={styles.td}>2021.11.28</td>
