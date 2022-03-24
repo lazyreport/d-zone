@@ -32,7 +32,7 @@ export const PanelSystem = ()=>{
   };
 
   const showInfo = ()=>{
-    window.location.replace("/general/panelsystem-info")
+    window.location.href="/general/panelsystem-info"
   }
 
 

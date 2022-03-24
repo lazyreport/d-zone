@@ -31,7 +31,7 @@ function SurveyOverview() {
   };
 
   const showInfo = ()=>{
-    window.location.replace("/general/survey-info")
+    window.location.href="/general/survey-info"
   }
 
 
