@@ -211,7 +211,7 @@ select option[value=""]:disabled {
   border: 1px solid #333;
   box-shadow: none;
   border-radius: 10px;
-  padding: 16px 60px;
+  padding: 10px 20px;
   overflow: visible;
   cursor: pointer;
   font-size: 21px;
