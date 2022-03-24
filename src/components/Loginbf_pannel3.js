@@ -11,19 +11,48 @@ function Loginbf_pannel3() {
     document.getElementById("");
   };
 
+
   // image preview
-  const [imageSrc, setImageSrc] = useState("");
-  const encodeFileToBase64 = (fileBlob) => {
+  const [imageSrc1, setImageSrc1] = useState("");
+  const [imageSrc2, setImageSrc2] = useState("");
+  const [imageSrc3, setImageSrc3] = useState("");
+  // addfile1
+  const encodeFileToBase64_1 = (fileBlob) => {
     const reader = new FileReader();
     reader.readAsDataURL(fileBlob);
 
     return new Promise((resolve) => {
       reader.onload = () => {
-        setImageSrc(reader.result);
+        setImageSrc1(reader.result);
         resolve();
       };
     });
   };
+  // addfile2
+  const encodeFileToBase64_2 = (fileBlob) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(fileBlob);
+
+    return new Promise((resolve) => {
+      reader.onload = () => {
+        setImageSrc2(reader.result);
+        resolve();
+      };
+    });
+  };
+  // adfile3
+  const encodeFileToBase64_3 = (fileBlob) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(fileBlob);
+
+    return new Promise((resolve) => {
+      reader.onload = () => {
+        setImageSrc3(reader.result);
+        resolve();
+      };
+    });
+  };
+
 
   // 문의신청
   const inquiryRegist = () => {
@@ -130,7 +159,7 @@ function Loginbf_pannel3() {
                   className="addfile1"
                   style={{ display: "none" }}
                   onChange={(e) => {
-                    encodeFileToBase64(e.target.files[0]);
+                    encodeFileToBase64_1(e.target.files[0]);
                     console.log(e.target.value, 1)
                   }}
                 />
@@ -141,8 +170,8 @@ function Loginbf_pannel3() {
                     handleInputFile("addfile1");
                   }}
                 >
-                  {imageSrc ? (
-                    <img src={imageSrc} alt="preview-img" />
+                  {imageSrc1 ? (
+                    <img src={imageSrc1} alt="preview-img" />
                   ) : (
                     <img src="img/addfile_camera.png" alt="" />
                   )}
@@ -153,7 +182,7 @@ function Loginbf_pannel3() {
                   className="addfile2"
                   style={{ display: "none" }}
                   onChange={(e) => {
-                    encodeFileToBase64(e.target.files[0]);
+                    encodeFileToBase64_2(e.target.files[0]);
                     console.log(e.target.value, 2)
                   }}
                 />
@@ -164,7 +193,11 @@ function Loginbf_pannel3() {
                     handleInputFile("addfile2");
                   }}
                 >
-                  <img src="img/addfile_camera.png" alt="" />
+                  {imageSrc2 ? (
+                    <img src={imageSrc2} alt="preview-img" />
+                  ) : (
+                    <img src="img/addfile_camera.png" alt="" />
+                  )}
                 </button>
                 <input
                   type="file"
@@ -172,7 +205,7 @@ function Loginbf_pannel3() {
                   className="addfile3"
                   style={{ display: "none" }}
                   onChange={(e) => {
-                    encodeFileToBase64(e.target.files[0]);
+                    encodeFileToBase64_3(e.target.files[0]);
                     console.log(e.target.value, 3)
                   }}
                 />
@@ -183,7 +216,11 @@ function Loginbf_pannel3() {
                     handleInputFile("addfile3");
                   }}
                 >
-                  <img src="img/addfile_camera.png" alt="" />
+                  {imageSrc3 ? (
+                    <img src={imageSrc3} alt="preview-img" />
+                  ) : (
+                    <img src="img/addfile_camera.png" alt="" />
+                  )}
                 </button>
                 <span className={styles.addfileDes}>
                   이미지 파일(GIF,PNG,JPG)을 기준으로 최대 10MB이하, 최대

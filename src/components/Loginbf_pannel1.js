@@ -56,7 +56,7 @@ function Loginbf_pannel1() {
                 className={styles.input}
                 placeholder="이메일"
                 required
-                onFocus={(e)=>{highLight(e)}}
+                onInvalid="이메일을 입력해주세요."
               />
             </div>
           </div>
