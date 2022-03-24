@@ -103,6 +103,7 @@ function Loginbf_pannel2() {
                 maxLength="3"
                 onChange={(e)=>{handleOnInput(e);}}
                 id="tel1"
+                required
               />
               <div className={styles.hipen}></div>
               <input
@@ -111,6 +112,7 @@ function Loginbf_pannel2() {
                 maxLength="4"
                 onChange={(e)=>{handleOnInput(e);}}
                 id="tel2"
+                required
               />
               <div className={styles.hipen}></div>
               <input
@@ -119,6 +121,7 @@ function Loginbf_pannel2() {
                 maxLength="4"
                 onChange={(e)=>{handleOnInput(e);}}
                 id="tel3"
+                required
               />
               <button
                 type="button"
@@ -141,6 +144,7 @@ function Loginbf_pannel2() {
               <input type="number" id="codeNumber" className={`${styles.input} ${styles.codeBox}`}
               minLength="6" 
               maxLength="6"
+              required
               onChange={(e)=>{handleOnInput(e);}} 
               />
               <button
