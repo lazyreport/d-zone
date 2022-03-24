@@ -41,7 +41,7 @@ function Loginbf_pannel3() {
     ) {
       alert("문의신청을 위한 필수 정보를 모두 입력해주세요.");
     } else {
-      inquiryRegist.submit();
+      // inquiryRegist.submit();
       alert("문의신청이 완료 되었습니다.");
     }
   };
