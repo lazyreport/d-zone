@@ -145,7 +145,7 @@
   margin: auto;
 }
 .resendTxt p{
-  padding-top: 20px;
+  padding-bottom: 0;
 }
 
 .resendTxt p:last-child {
@@ -183,7 +183,7 @@
   margin: auto;
 }
 .confirmTxt p{
-  padding-top: 20px;
+  padding-bottom: 0;
 }
 
 .confirmTxt p:last-child {
