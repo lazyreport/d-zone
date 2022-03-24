@@ -37,7 +37,7 @@ function PointOverview() {
   };
 
   const showInfo = ()=>{
-    window.location.replace("/general/point-info")
+    window.location.href="/general/point-info"
   }
 
   //datepicker

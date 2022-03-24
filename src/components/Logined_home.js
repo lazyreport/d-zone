@@ -13,10 +13,11 @@ function Logined_home() {
   };
 
   // 테이블 자동생성
-  const surveyWill = 6;
+  const surveyWill = 10;
   const surveyIng = 15;
   const surveyEd = 20;
-  const makeTableContents = (numberOfContents) => {
+  // 설문예정
+  const makeTableContentsWill = (numberOfContents) => {
     const result = []; 
     for(let i=0; i < numberOfContents; i++){
     result.push(
@@ -37,7 +38,7 @@ function Logined_home() {
             0
           </td>
           <td scope="row" className={`${styles.td} ${styles.state}`}>
-            <span className={styles.span}> 설문예정</span>
+            <span className={styles.span}>설문예정</span>
           </td>
           <td scope="row" className={`${styles.td} ${styles.register}`}>
             홍길동
@@ -48,20 +49,79 @@ function Logined_home() {
         </tr>
       );
     }
-    // setPosts(result.reverse());
+    return result.reverse();
+  };
+  // 설문중
+  const makeTableContentsIng = (numberOfContents) => {
+    const result = []; 
+    for(let i=0; i < numberOfContents; i++){
+    result.push(
+        <tr className={styles.tr}>
+          <td scope="row" className={`${styles.td} ${styles.number}`}>
+            {i+1}
+          </td>
+          <td scope="row" className={`${styles.td} ${styles.title}`}>
+            <a>갤럭시S21 사용자 만족도 조사{i+1}</a>
+          </td>
+          <td scope="row" className={`${styles.td} ${styles.date}`}>
+            2021.10.28 ~ 2021.11.28
+          </td>
+          <td scope="row" className={`${styles.td} ${styles.sampleNeed}`}>
+            500
+          </td>
+          <td scope="row" className={`${styles.td} ${styles.sampleComplete}`}>
+            0
+          </td>
+          <td scope="row" className={`${styles.td} ${styles.state}`}>
+            <span className={styles.span}>&nbsp;설문중&nbsp;</span>
+          </td>
+          <td scope="row" className={`${styles.td} ${styles.register}`}>
+            홍길동
+          </td>
+          <td scope="row" className={`${styles.td} ${ styles.belong}`}>
+            개인
+          </td>
+        </tr>
+      );
+    }
+    return result.reverse();
+  };
+  // 설문 마감
+  const makeTableContentsEd = (numberOfContents) => {
+    const result = []; 
+    for(let i=0; i < numberOfContents; i++){
+    result.push(
+        <tr className={styles.tr}>
+          <td scope="row" className={`${styles.td} ${styles.number}`}>
+            {i+1}
+          </td>
+          <td scope="row" className={`${styles.td} ${styles.title}`}>
+            <a>갤럭시S21 사용자 만족도 조사{i+1}</a>
+          </td>
+          <td scope="row" className={`${styles.td} ${styles.date}`}>
+            2021.10.28 ~ 2021.11.28
+          </td>
+          <td scope="row" className={`${styles.td} ${styles.sampleNeed}`}>
+            500
+          </td>
+          <td scope="row" className={`${styles.td} ${styles.sampleComplete}`}>
+            0
+          </td>
+          <td scope="row" className={`${styles.td} ${styles.state}`}>
+            <span className={styles.span}> 설문마감</span>
+          </td>
+          <td scope="row" className={`${styles.td} ${styles.register}`}>
+            홍길동
+          </td>
+          <td scope="row" className={`${styles.td} ${ styles.belong}`}>
+            개인
+          </td>
+        </tr>
+      );
+    }
     return result.reverse();
   };
 
-  const pagination = (total, limit, page, setPage) => {
-
-  }
-
-
-  // PageNation을 위한 props 설정들
-  // const [posts, setPosts] = useState([]);
-  // const [limit, setLimit] = useState(30);
-  // const [page, setPage] = useState(1);
-  // const offset = (page - 1) * limit;
 
   return (
     <main className={styles.logined_home}>
@@ -153,15 +213,15 @@ function Logined_home() {
                         <th scope="col" className={styles.th}>설문번호</th>
                         <th scope="col" className={styles.th}>조사명</th>
                         <th scope="col" className={styles.th}>요청기간</th>
-                        <th scope="col" className={styles.th}>필요샘플수</th>
-                        <th scope="col" className={styles.th}>완료샘플수</th>
-                        <th scope="col" className={styles.th}>상태</th>
+                        <th scope="col" className={styles.th}>필요샘플 수</th>
+                        <th scope="col" className={styles.th}>완료샘플 수</th>
+                        <th scope="col" className={`${styles.th} ${styles.state}`}>상태</th>
                         <th scope="col" className={styles.th}>등록자</th>
                         <th scope="col" className={styles.th}>소속</th>
                       </tr>
                     </thead>
                     <tbody className={styles.tbody}>
-                      {makeTableContents(surveyWill)}
+                      {makeTableContentsWill(surveyWill)}
                     </tbody>
                   </table>
                   {/* e: table */}
@@ -195,7 +255,7 @@ function Logined_home() {
               {isChecked === "checkIng" ? (
                 <div className={styles.surveing}>
                   <table className={styles.table}>
-                    <thead>
+                    <thead className={styles.thead}>
                       <tr className={styles.tr}>
                         <th scope="col" className={styles.th}>설문번호</th>
                         <th scope="col" className={styles.th}>조사명</th>
@@ -208,7 +268,7 @@ function Logined_home() {
                       </tr>
                     </thead>
                     <tbody className={styles.tbody}>
-                      {makeTableContents(surveyIng)}
+                      {makeTableContentsIng(surveyIng)}
                     </tbody>
                   </table>
                   {/* e: table */}
@@ -243,7 +303,7 @@ function Logined_home() {
               {isChecked === "checkEd" ? (
                 <div className={styles.surveied}>
                   <table className={styles.table}>
-                    <thead>
+                    <thead className={styles.thead}>
                       <tr className={styles.tr}>
                         <th scope="col" className={styles.th}>설문번호</th>
                         <th scope="col" className={styles.th}>조사명</th>
@@ -256,7 +316,7 @@ function Logined_home() {
                       </tr>
                     </thead>
                     <tbody className={styles.tbody}>
-                      {makeTableContents(surveyEd)}
+                      {makeTableContentsEd(surveyEd)}
                     </tbody>
                   </table>
                   {/* e: table */}

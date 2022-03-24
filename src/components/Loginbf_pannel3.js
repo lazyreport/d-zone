@@ -41,7 +41,7 @@ function Loginbf_pannel3() {
     ) {
       alert("문의신청을 위한 필수 정보를 모두 입력해주세요.");
     } else {
-      inquiryRegist.submit();
+      // inquiryRegist.submit();
       alert("문의신청이 완료 되었습니다.");
     }
   };
@@ -195,6 +195,7 @@ function Loginbf_pannel3() {
             <div className={styles.btnContainer}>
               <button
                 type="submit"
+                // type="button"
                 className={styles.btn}
                 onClick={() => {
                   inquiryRegist();

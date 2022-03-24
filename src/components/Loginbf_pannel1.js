@@ -14,7 +14,7 @@ function Loginbf_pannel1() {
     if (!inputEmail || !inputUsername) {
       alert("아이디와 사용자명을 모두 입력해주세요.");
     } else {
-      loginForm.submit();
+      // loginForm.submit();
       alert("입력하신 이메일로 아이디가 발송 되었습니다.");
     }
   };
@@ -70,6 +70,7 @@ function Loginbf_pannel1() {
           <div className={styles.btnContainer}>
               <button
                 type="submit"
+                // type="button"
                 className={`${styles.btn} ${styles.btnPrimary}`}
                 onClick={() => {
                   login();

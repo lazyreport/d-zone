@@ -59,7 +59,7 @@ function Loginbf_pannel2() {
     if (!inputEmail || !inputUsername || !tel1 || !tel2 || !tel3 || !codeNumber) {
       alert("아이디와 사용자명 및 휴대폰 인증을 모두 확인해주세요.");
     } else {
-      findForm.submit();
+      // findForm.submit();
       alert("입력하신 이메일로 임시비밀번호가 발송 되었습니다. 로그인 후 비밀번호를 반드시 변경해주시기 바랍니다.");
     }
   };
@@ -162,6 +162,7 @@ function Loginbf_pannel2() {
           <div className={styles.btnContainer}>
             <button
               type="submit"
+              // type="button"
               className={`${styles.btn} ${styles.btnPrimary}`} onClick={()=>{tempPasswordSend();}}
             >
               임시비밀번호 발송

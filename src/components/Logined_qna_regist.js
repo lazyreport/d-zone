@@ -10,13 +10,12 @@ function Logined_qna_regist() {
     var qnaRegist = document.qnaRegist;
     var titleInputBox = qnaRegist.titleInputBox.value;
     var contentInputBox = qnaRegist.contentInputBox.value;
-
     if (
       !titleInputBox ||
       !contentInputBox) {
       alert("필수 정보를 모두 입력해주세요.");
     } else {
-      qnaRegist.submit();
+      // qnaRegist.submit();
       alert("Q&A 등록이 완료 되었습니다.");
     }
   };
@@ -74,9 +73,9 @@ function Logined_qna_regist() {
             </form>
 
             <div className={styles.registCancleBtn}>
-              <Link to='/QA'>
                 <button
-                  type="button"
+                  type="submit"
+                  // type="button"
                   className={`${styles.btn} ${styles.regist}`}
                   onClick={()=>{
                     qnaRegist();
@@ -84,7 +83,6 @@ function Logined_qna_regist() {
                 >
                   등록
                 </button>
-              </Link>
               <Link to='/QA'>
               <button
                 type="button"

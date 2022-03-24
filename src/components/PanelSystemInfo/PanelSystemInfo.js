@@ -21,6 +21,11 @@ function PanelSystemInfo() {
     console.log(process);
   };
 
+  function btnSave(e) {
+    e.preventDefault();
+    alert("저장되었습니다.");
+  }
+
 
   return (
     <div className={styles.PanelSystemInfo}>
@@ -70,7 +75,7 @@ function PanelSystemInfo() {
                 <option value={"처리중"}>처리중</option>
                 <option value={"완료"}>완료</option> */}
               </select>
-              <button className={styles.save_btn} >저장</button>
+              <button className={styles.save_btn} onClick={btnSave} >저장</button>
               <button className={styles.list_btn}><Link to="/general/panelsystem">목록</Link></button>
             </div>
             <div className={styles.change_log}>
