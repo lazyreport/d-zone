@@ -203,6 +203,7 @@ select option[value=""]:disabled {
   margin-right: 19px;
 }
 .saveBtn > span{
+  display: inline-block;
   width: 42px;
 }
 .cancelBtn {
@@ -221,6 +222,7 @@ select option[value=""]:disabled {
   margin-bottom: 77px;
 }
 .cancelBtn > span{
+  display: inline-block;
   width: 42px;
 }
 .fileupload a {
