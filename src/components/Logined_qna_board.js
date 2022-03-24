@@ -24,7 +24,7 @@ export default function Logined_qna_board() {
             <a href="#" className={styles.a}>Q&A 게시판 {(i % 6) === 0 ? `(${replyNumber})` : ''}</a>
             </Link>
           </td>
-          <td className={styles.td}>2021.11.28</td>
+          <td className={styles.td}>2021.11.{10 + i}</td>
           <td className={styles.td}>홍길동</td>
         </tr>
       );

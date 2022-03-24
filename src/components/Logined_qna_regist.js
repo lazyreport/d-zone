@@ -16,7 +16,7 @@ function Logined_qna_regist() {
       !contentInputBox) {
       alert("필수 정보를 모두 입력해주세요.");
     } else {
-      // qnaRegist.submit();
+      qnaRegist.submit();
       alert("Q&A 등록이 완료 되었습니다.");
     }
   };

@@ -32,7 +32,7 @@ function Logined_home() {
             </Link>
           </td>
           <td scope="row" className={`${styles.td} ${styles.date}`}>
-            2021.10.28 ~ 2021.11.28
+            2022.05.01 ~ 2022.06.01
           </td>
           <td scope="row" className={`${styles.td} ${styles.sampleNeed}`}>
             500
@@ -69,7 +69,7 @@ function Logined_home() {
             </Link>
           </td>
           <td scope="row" className={`${styles.td} ${styles.date}`}>
-            2021.10.28 ~ 2021.11.28
+            2022.02.28 ~ 2022.03.28
           </td>
           <td scope="row" className={`${styles.td} ${styles.sampleNeed}`}>
             500
@@ -106,7 +106,7 @@ function Logined_home() {
             </Link>
           </td>
           <td scope="row" className={`${styles.td} ${styles.date}`}>
-            2021.10.28 ~ 2021.11.28
+            2021.09.10 ~ 2021.10.10
           </td>
           <td scope="row" className={`${styles.td} ${styles.sampleNeed}`}>
             500
