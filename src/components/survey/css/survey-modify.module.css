@@ -202,6 +202,10 @@ select option[value=""]:disabled {
   height: 52px;
   margin-right: 19px;
 }
+.modifybox .saveBtn:hover {
+ background-color: #fff;
+ color: #ffc107;
+} 
 .saveBtn > span{
   display: inline-block;
   width: 42px;
@@ -220,6 +224,10 @@ select option[value=""]:disabled {
   width: 162px;
   height: 52px;
   margin-bottom: 77px;
+}
+.modifybox .cancelBtn {
+  background-color: #333;
+  color: #fff;
 }
 .cancelBtn > span{
   display: inline-block;
