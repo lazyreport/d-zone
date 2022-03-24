@@ -5,13 +5,13 @@
   
 }
 
-h1 {
+.cards h1 {
   text-align: center;
   font-size: 40px;
   font-weight: bold;
 }
 
-p {
+.cards p {
   padding-top: 26px;
   text-align: center;
   font-size: 18 px;
