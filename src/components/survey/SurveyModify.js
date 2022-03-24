@@ -179,9 +179,11 @@ function SurveyModify(){
             </form>
             <section className={styles.btnArea}>
             <Link to='/registration'>
-                <button className={styles.saveBtn} onClick={()=>{alert('저장되었습니다.')}}><span>저장</span></button></Link>
-                <Link to='/registration/marketresearch'>
-                <button className={styles.cancelBtn} onClick={()=>{alert('변경사항이 저장되지 않습니다.')}}><span>취소</span></button></Link>
+                <button className={styles.saveBtn} onClick={()=>{alert('저장되었습니다.')}}><span>저장</span></button>
+            </Link>
+            <Link to='/registration/marketresearch'>
+                <button className={styles.cancelBtn} onClick={()=>{alert('변경사항이 저장되지 않습니다.')}}><span>취소</span></button>
+            </Link>
             </section>
         </div>
         </FadeIn>

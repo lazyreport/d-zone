@@ -203,7 +203,7 @@
   justify-content: center;
   margin: 0 auto 127px;
 }
-.modifyBtn {
+.researchWrapper .modifyBtn {
   background-color: #ffc107;
   color: #333;
   border: none;
@@ -218,7 +218,11 @@
   height: 52px;
   margin-right: 19px;
 }
-.listBtn {
+.researchWrapper .modifyBtn:hover{
+  background-color: #fff;
+  color: #ffc107;
+}
+.researchWrapper .listBtn {
   background-color: #fff;
   border: 1px solid #333;
   color: #333;
@@ -231,6 +235,10 @@
   font-weight: 700;
   width: 162px;
   height: 52px;
+}
+.researchWrapper .listBtn {
+  background-color: #333;
+  color: #333;
 }
 .listBtn > a{
   color:#333;
