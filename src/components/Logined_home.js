@@ -3,6 +3,7 @@ import styles from "./Logined_home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
 import FadeIn from "react-fade-in";
+import { Link } from "react-router-dom";
 
 function Logined_home() {
   // 설문조사 체크
@@ -26,7 +27,9 @@ function Logined_home() {
             {i+1}
           </td>
           <td scope="row" className={`${styles.td} ${styles.title}`}>
-            <a>갤럭시S21 사용자 만족도 조사{i+1}</a>
+          <Link to='/registration/marketresearch'>
+              <a>갤럭시S21 사용자 만족도 조사{i+1}</a>
+            </Link>
           </td>
           <td scope="row" className={`${styles.td} ${styles.date}`}>
             2021.10.28 ~ 2021.11.28
@@ -61,7 +64,9 @@ function Logined_home() {
             {i+1}
           </td>
           <td scope="row" className={`${styles.td} ${styles.title}`}>
-            <a>갤럭시S21 사용자 만족도 조사{i+1}</a>
+            <Link to='/registration/marketresearch'>
+              <a>갤럭시S21 사용자 만족도 조사{i+1}</a>
+            </Link>
           </td>
           <td scope="row" className={`${styles.td} ${styles.date}`}>
             2021.10.28 ~ 2021.11.28
@@ -96,7 +101,9 @@ function Logined_home() {
             {i+1}
           </td>
           <td scope="row" className={`${styles.td} ${styles.title}`}>
-            <a>갤럭시S21 사용자 만족도 조사{i+1}</a>
+          <Link to='/registration/marketresearch'>
+              <a>갤럭시S21 사용자 만족도 조사{i+1}</a>
+            </Link>
           </td>
           <td scope="row" className={`${styles.td} ${styles.date}`}>
             2021.10.28 ~ 2021.11.28

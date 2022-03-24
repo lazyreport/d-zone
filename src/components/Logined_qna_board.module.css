@@ -4,7 +4,7 @@
   margin: 63px auto 108px auto;
 }
 
-.pannelText {
+.logined_qna_board .pannelText {
 font-size: 30px;
 font-weight: bold;
 text-align: center;
@@ -13,7 +13,7 @@ margin-bottom: 59px;
 }
 
 /* qna 전체 박스 (qna-box) */
-.qnaBox {
+.logined_qna_board .qnaBox {
 width: 1000px;
 margin: auto;
 margin-bottom: 50px;
@@ -24,22 +24,22 @@ justify-content: center;
 }
 
 /* qna-box의 regist-search */
-.registSearch {
+.logined_qna_board .registSearch {
 margin-bottom: 20px;
 width: 100%;
 display: flex;
 justify-content: space-between;
 align-items: center;
 }
-.registSearch .registBox {
+.logined_qna_board .registSearch .registBox {
 justify-content: flex-start;
 }
-.registSearch .searchBox {
+.logined_qna_board .registSearch .searchBox {
 justify-content: flex-end;
 }
 
 /* regist 버튼 */
-.regist {
+.logined_qna_board .regist {
 width: 162px;
 height: 52px;
 font-size: 18px;
@@ -50,14 +50,14 @@ border: none;
 font-weight: bold;
 cursor: pointer;
 }
-.regist:hover{
+.logined_qna_board .regist:hover{
 background-color: #fff;
 color: #ffc107;
 border: 1px solid #ffc107;
 }
 
 /* search 바 */
-.searchBox {
+.logined_qna_board .searchBox {
 width: 190px;
 height: 35px;
 border: 1px solid #afafaf;
@@ -65,64 +65,64 @@ border-radius: 50px;
 display: flex;
 padding: 5px;
 }
-.searchBox .formControl {
+.logined_qna_board .searchBox .formControl {
 border: none;
 outline: none;
 background-color: transparent;
 width: 100%;
 }
-.searchBox .btn {
+.logined_qna_board .searchBox .btn {
 border: none;
 cursor: pointer;
 background-color: transparent;
 padding-right: 5px;
 padding-left: 5px;
 }
-.searchBox .btn .img{
+.logined_qna_board .searchBox .btn .img{
 width: 20px;
 height: 20px;
 }
 
 /* qna-box의 table */
-.table {
+.logined_qna_board .table {
 width: auto;
 border-top: 1px solid #444444;
 border-bottom: 1px solid #444444;
 border-collapse: collapse;
 overflow-y: scroll;
 }
-.th {
+.logined_qna_board .th {
 border-bottom: 1px solid #444444;
 }
-.th,
-.td {
+.logined_qna_board .th,
+.logined_qna_board .td {
 border-left: 1px solid #444444;
 padding: 10px;
 text-align: center;
 }
-.th:first-child,
-.td:first-child {
+.logined_qna_board .th:first-child,
+.logined_qna_board .td:first-child {
 border-left: none;
 }
-.tbody .tr .td:nth-child(2) .a:hover{
+.logined_qna_board .tbody .tr .td:nth-child(2) .a:hover{
 color: red;
 }
-.table .number {
+.logined_qna_board .table .number {
 width: 50px;
 }
-.table .title {
+.logined_qna_board .table .title {
 width: 400px;
 }
-.table .registDate {
+.logined_qna_board .table .registDate {
 width: 80px;
 }
-.table .register {
+.logined_qna_board .table .register {
 width: 80px;
 }
 
 /* qnaBox의 pagination */
 /* controllerBox */
-.controllerBox {
+.logined_qna_board .controllerBox {
 margin: 20px auto;
 line-height: 20px;
 padding: 10px;
@@ -130,14 +130,14 @@ width: 200px;
 display: flex;
 justify-content: space-between;
 }
-.controllerBox .a {
+.logined_qna_board .controllerBox .a {
 display: block;
 margin-right: 10px;
 }
-.controllerBox .a:hover{
+.logined_qna_board .controllerBox .a:hover{
 color: #ff7a3d;
 }
-.controllerBox .btn {
+.logined_qna_board .controllerBox .btn {
 width: 20px;
 height: 20px;
 background-color: #ffc107;
@@ -146,7 +146,7 @@ text-align: center;
 line-height: 20px;
 font-size: 16px;
 }
-.controllerBox .btn:hover{
+.logined_qna_board .controllerBox .btn:hover{
 background-color: #fff;
 color: #ffc107;
 border: 1px solid #ffc107;
