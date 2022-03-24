@@ -69,8 +69,8 @@ function Loginbf_pannel1() {
           </div>
           <div className={styles.btnContainer}>
               <button
-                // type="submit"
-                type="button"
+                type="submit"
+                // type="button"
                 className={`${styles.btn} ${styles.btnPrimary}`}
                 onClick={() => {
                   login();

@@ -161,8 +161,8 @@ function Loginbf_pannel2() {
 
           <div className={styles.btnContainer}>
             <button
-              // type="submit"
-              type="button"
+              type="submit"
+              // type="button"
               className={`${styles.btn} ${styles.btnPrimary}`} onClick={()=>{tempPasswordSend();}}
             >
               임시비밀번호 발송
