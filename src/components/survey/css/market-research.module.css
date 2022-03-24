@@ -142,7 +142,10 @@
   justify-content: space-around;
   align-items: center;
   vertical-align: middle;
-  margin: 20px auto 0;
+  margin: auto;
+}
+.resendTxt p{
+  padding-top: 20px;
 }
 
 .resendTxt p:last-child {
@@ -177,7 +180,10 @@
   justify-content: space-around;
   align-items: center;
   vertical-align: middle;
-  margin: 20px auto 0;
+  margin: auto;
+}
+.confirmTxt p{
+  padding-top: 20px;
 }
 
 .confirmTxt p:last-child {
