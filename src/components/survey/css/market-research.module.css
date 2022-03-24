@@ -3,39 +3,39 @@
   max-width: 1200px;
   margin: auto;
 }
-.marketResearch {
+.researchWrapper .marketResearch {
   width: 100%;
   margin: 53px auto 126px;
 }
-.toparea {
+.researchWrapper .toparea {
   margin: 56px auto 41px;
 }
-.imgarea {
+.researchWrapper .imgarea {
   display: flex;
   justify-content: center;
   margin: 0 auto 53px;
 }
-.imgarea img {
+.researchWrapper .imgarea img {
   width: 117px;
   height: 115px;
 }
-.txtarea {
+.researchWrapper .txtarea {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.txtarea h2 {
+.researchWrapper .txtarea h2 {
   font-size: 24px;
   font-weight: 700;
   padding-bottom: 19px;
   color: #333;
 }
-.txtarea p {
+.researchWrapper .txtarea p {
   font-size: 16px;
   padding-bottom: 20px;
 }
 /* chart 텍스트 */
-.chartTxt {
+.researchWrapper .chartTxt {
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto 36px;
@@ -43,7 +43,7 @@
   height: 243px;
   background-color: #eee;
 }
-.result h2 {
+.researchWrapper .result h2 {
   font-size: 19px;
   font-weight: 700;
   text-align: center;
@@ -53,22 +53,22 @@
   margin: 28px auto 37px;
   color:#000;
 }
-.resultTxt {
+.researchWrapper .resultTxt {
   display: flex;
   justify-content: space-between;
   width: 200px;
   margin: auto;
 }
-.resultTxt span {
+.researchWrapper .resultTxt span {
   font-size: 16px;
   padding-bottom: 20px;
   color: #333;
 }
-.resultTxt:last-child span {
+.researchWrapper .resultTxt:last-child span {
   padding-bottom: 39px;
 }
 /*도넛 차트*/
-.donutChart {
+.researchWrapper .donutChart {
   display: flex;
   justify-content: space-evenly;
   width: 726px;
@@ -76,19 +76,19 @@
 }
 
 /*플러그인 작대기 3개 삭제*/
-.highcharts-button-symbol {
+.researchWrapper .highcharts-button-symbol {
   display: none;
 }
 /*----------------------------------------------------------------*/
 /* 설문 프로파일 */
-.profile {
+.researchWrapper .profile {
   width: 100%;
   margin: 0 auto 70px;
 }
-.step {
+.researchWrapper .step {
   margin: 74px 0 64px;
 }
-.stepArea {
+.researchWrapper .stepArea {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -96,30 +96,30 @@
   margin: auto;
   padding-bottom: 20px;
 }
-.stepArea dt {
+.researchWrapper .stepArea dt {
   font-size: 17px;
 }
-.stepTag {
+.researchWrapper .stepTag {
   display: flex;
 }
-.tag {
+.researchWrapper .tag {
   cursor: pointer;
   padding: 0 3px;
 }
-.tag span{
+.researchWrapper .tag span{
   color: #333;
   font-weight: 400;
   margin: auto;
 }
-.history {
+.researchWrapper .history {
   margin-bottom: 70px;
 }
-.resend {
+.researchWrapper .resend {
   display: flex;
   justify-content: center;
   margin-bottom: 57px;
 }
-.resend dt {
+.researchWrapper .resend dt {
   text-align: center;
   padding-top: 20px;
   font-size: 24px;
@@ -127,13 +127,13 @@
   line-height: 24px;
   margin-bottom: 21px;
 }
-.resend dd {
+.researchWrapper .resend dd {
   width: 726px;
   height: 89px;
   background-color: #eee;
   display: flex;
 }
-.resendTxt {
+.researchWrapper .resendTxt {
   width: 250px;
   font-size: 16px;
   line-height: 16px;
@@ -145,16 +145,16 @@
   margin: auto;
 }
 
-.resendTxt p:last-child {
+.researchWrapper .resendTxt p:last-child {
   color: #ff5907;
 }
 
-.confirm {
+.researchWrapper .confirm {
   display: flex;
   justify-content: center;
   margin-bottom: 83px;
 }
-.confirm dt {
+.researchWrapper .confirm dt {
   text-align: center;
   padding-top: 20px;
   font-size: 24px;
@@ -162,13 +162,13 @@
   line-height: 24px;
   margin-bottom: 21px;
 }
-.confirm dd {
+.researchWrapper .confirm dd {
   width: 726px;
   height: 89px;
   background-color: #eee;
   display: flex;
 }
-.confirmTxt {
+.researchWrapper .confirmTxt {
   width: 350px;
   font-size: 16px;
   line-height: 16px;
@@ -180,11 +180,11 @@
   margin: auto;
 }
 
-.confirmTxt p:last-child {
+.researchWrapper .confirmTxt p:last-child {
   color: #ff5907;
 }
 /* 태그 */
-.tag {
+.researchWrapper .tag {
   background-color: #fff;
   border: 1px solid #777777;
   border-radius: 10px;
@@ -193,12 +193,12 @@
   line-height: 16px;
   display: flex;
 }
-.tag span {
+.researchWrapper .tag span {
   padding: 3px;
   vertical-align: middle;
 }
 /* 버튼 */
-.researchBtnarea {
+.researchWrapper .researchBtnarea {
   display: flex;
   justify-content: center;
   margin: 0 auto 127px;
@@ -236,9 +236,9 @@
   width: 162px;
   height: 52px;
 }
-.researchWrapper .listBtn {
+.researchWrapper .listBtn:hover {
   background-color: #333;
-  color: #333;
+  color: #fff;
 }
 .listBtn > a{
   color:#333;

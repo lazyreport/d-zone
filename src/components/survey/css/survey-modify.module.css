@@ -6,122 +6,122 @@
   font-size: 17px;
 }
 /* 폼 */
-.form {
+.modifybox .form {
   width: fit-content;
   margin: auto;
   padding: 20px 0;
 }
-.dl1,
-.dl2,
-.dl4 {
+.modifybox .dl1,
+.modifybox .dl2,
+.modifybox .dl4 {
   display: flex;
   margin-bottom: 15px;
 }
-.dl5 {
+.modifybox .dl5 {
   display: flex;
   margin-bottom: 40px;
 }
-.dl1 dt {
+.modifybox .dl1 dt {
   width: 120px;
   font-size: 17px;
   line-height: 1.2;
   font-weight: 700;
 }
-.dl1 dt span{
+.modifybox .dl1 dt span{
   color: #333;
 }
-.dl2 dt {
+.modifybox .dl2 dt {
   width: 120px;
   font-size: 17px;
   line-height: 1.2;
   font-weight: 700;
 }
-.dl2 dt span{
+.modifybox .dl2 dt span{
   color: #333;
 }
-.dl4 dt {
+.modifybox .dl4 dt {
   width: 120px;
   font-size: 17px;
   line-height: 1.2;
   font-weight: 700;
 }
-.dl4 dt span{
+.modifybox .dl4 dt span{
   color: #333;
 }
-.dl4 dd {
+.modifybox .dl4 dd {
   display: flex;
 }
-.dl4 dd .fileupload {
+.modifybox .dl4 dd .fileupload {
   width: 120px;
 }
-.dl5 dt {
+.modifybox .dl5 dt {
   width: 120px;
   font-size: 17px;
   line-height: 1.2;
   font-weight: 700;
 }
-.dl5 dt span{
+.modifybox .dl5 dt span{
   color: #333;
 }
 /* dl 길이*/
-.dl1 dd input {
+.modifybox .dl1 dd input {
   width: 300px;
   height: 23px;
 }
-.dl2 dd input {
+.modifybox .dl2 dd input {
   width: 300px;
   height: 23px;
 }
-.dl2 dt input {
+.modifybox .dl2 dt input {
   height: 23px;
 }
-.dl2 dd input {
+.modifybox .dl2 dd input {
   height: 23px;
 }
 
-.datearea span{
+.modifybox .datearea span{
   color:#333;
   padding-right: 10px;
 }
 /* 단계 */
-.dl6 {
+.modifybox .dl6 {
   display: flex;
   width: fit-content;
 }
-.surveyProfile {
+.modifybox .surveyProfile {
   align-self: center;
   font-size: 17px;
   line-height: 1.2;
   font-weight: 700;
   width: 120px;
 }
-.stepArea {
+.modifybox .stepArea {
   display: flex;
   justify-content: flex-start;
 }
-.stepArea dt {
+.modifybox .stepArea dt {
   width: 50px;
   font-size: 17px;
   line-height: 1.3;
   margin-right: 10px;
 }
-.stepArea dd section {
+.modifybox .stepArea dd section {
   margin-bottom: 10px;
 }
 /*설문지바로가기*/
-.shortcut {
+.modifybox .shortcut {
   text-decoration: underline;
   margin-left: 20px;
 }
 /* 인풋 */
-input:focus {
+.modifybox input:focus {
   outline: 1px solid #ffc107;
 }
 /*파일등록*/
-.fileuploadArea {
+.modifybox .fileuploadArea {
   display: flex;
 }
-.uploadButton{
+.modifybox .uploadButton{
   font-size: 16px;
   background-color: #fff;
   width:250px;
@@ -137,32 +137,32 @@ input:focus {
   cursor: pointer;
   font-weight: 600;
 }
-.dl4 p {
+.modifybox .dl4 p {
   font-size: 16px;
   line-height: 2;
   margin-left: 5px;
   padding-top: 2px;
 }
 /* 선택박스 & 태그 */
-.selectArea {
+.modifybox .selectArea {
   display: flex;
 }
-.selectbox {
+.modifybox .selectbox {
   margin-right: 10px;
   width: 90px;
 }
-select option[value=""]:disabled {
+.modifybox select option[value=""]:disabled {
   display: none;
 }
 /* 가로 스크롤 */
-.tagWrapper {
+.modifybox .tagWrapper {
   display: flex;
 }
 /* 태그 */
-.tagContainer {
+.modifybox .tagContainer {
   display: flex;
 }
-.tagbox {
+.modifybox .tagbox {
   background-color: #fff;
   border: 1px solid #777777;
   border-radius: 10px;
@@ -171,22 +171,22 @@ select option[value=""]:disabled {
   line-height: 16px;
   display: flex;
 }
-.tagtagbox span {
+.modifybox .tagtagbox span {
   padding: 3px;
   vertical-align: middle;
 }
-.tagX {
+.modifybox .tagX {
   margin: 0 5px;
   cursor: pointer;
   padding: 3px;
 }
 /* 버튼 */
-.btnArea {
+.modifybox .btnArea {
   display: flex;
   justify-content: flex-end;
   margin: 10 30px;
 }
-.saveBtn {
+.modifybox .saveBtn {
   background-color: #ffc107;
   color: #fff;
   border: none;
@@ -206,11 +206,11 @@ select option[value=""]:disabled {
  background-color: #fff;
  color: #ffc107;
 } 
-.saveBtn > span{
+.modifybox .saveBtn > span{
   display: inline-block;
   width: 42px;
 }
-.cancelBtn {
+.modifybox .cancelBtn {
   background-color: #fff;
   border: 1px solid #333;
   box-shadow: none;
@@ -225,15 +225,15 @@ select option[value=""]:disabled {
   height: 52px;
   margin-bottom: 77px;
 }
-.modifybox .cancelBtn {
+.modifybox .cancelBtn:hover {
   background-color: #333;
   color: #fff;
 }
-.cancelBtn > span{
+.modifybox .cancelBtn > span{
   display: inline-block;
   width: 42px;
 }
-.fileupload a {
+.modifybox .fileupload a {
   color: #fff;
   font-size: 16px;
   line-height: 16px;
