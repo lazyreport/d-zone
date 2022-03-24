@@ -36,7 +36,7 @@
     text-align: right;
     background: linear-gradient(-45deg, #fc7b11, #f7d66a, #ffbe31, #fc7b11);
     background-size: 400% 400%;
-    animation: gradient 5s ease infinite;
+    animation: gradient 3s ease infinite;
     font-size: 18px;
 }
 .join-btn:hover{
@@ -186,7 +186,9 @@
 }
 
 .content4 .inner-box h1 {
-    margin-bottom: 87px
+    margin-bottom: 87px;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .content4 ul {
@@ -258,9 +260,21 @@
     padding: 200px 0 50px;
 }
 
+.content5 .inner-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content5 .inner-box h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
 .content5 p {
     line-height: 1.5;
     padding-bottom: 70px;
+    padding-top: 26px;
 }
 
 .swiper {
@@ -325,7 +339,7 @@
     background-color: #fff;
     width: 10%;
     height: 1%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .content6 .inner-box .left p {
@@ -343,7 +357,7 @@
     padding: 15px 15px; 
     background: linear-gradient(-45deg, #fc7b11, #d377e6, #ffbe31, #fc7b11);
     background-size: 400% 400%;
-    animation: gradient 5s ease infinite;
+    animation: gradient 3s ease infinite;
     color: #fff; 
     border-radius: 10px; 
     font-size: 18px;

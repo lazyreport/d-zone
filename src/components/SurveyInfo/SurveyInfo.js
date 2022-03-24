@@ -34,6 +34,11 @@ function SurveyInfo() {
     window.location.replace("/general/survey-overview")
   } */
 
+  function btnSave(e) {
+    e.preventDefault();
+    alert("저장되었습니다.");
+  }
+
 
   return (
     <div className={styles.SurveyInfo}>
@@ -103,7 +108,7 @@ function SurveyInfo() {
               <input onChange={onChange} value={text} />
             </div>
             <div className={styles.state_btn_box}>
-              <Link to="#" className={styles.save_btn}>저장</Link>
+              <Link to="#" className={styles.save_btn} onClick={btnSave} >저장</Link>
               <Link to="/general/survey-overview" className={styles.list_btn}>목록</Link>
               {/* <button className={styles.list_btn} onClick={goList}>목록</button> */}
             </div>

@@ -25,6 +25,11 @@ function PointInfo() {
     window.location.replace("/general/point-overview")
   } */
 
+  function btnSave(e) {
+    e.preventDefault();
+    alert("저장되었습니다.");
+  }
+
   return (
     <div className={styles.point_info}>
       <Gnb />
@@ -78,7 +83,7 @@ function PointInfo() {
               <option key={item.key} value={item.key}>{item.value}</option>
               ))}
             </select>
-            <Link to="#" className={styles.save_btn}>저장</Link>
+            <Link to="#" className={styles.save_btn} onClick={btnSave}>저장</Link>
             <Link to="/general/point-overview" className={styles.list_btn}>목록</Link>
           </div>
           <div className={styles.change_log}>
