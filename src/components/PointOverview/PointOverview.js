@@ -64,7 +64,7 @@ function PointOverview() {
                 dateFormat="yyyy.MM.dd" // 시간 포맷 변경 
                 showPopperArrow={false}    // 화살표 변경 
                 customInput={		  // 날짜 뜨는 인풋 커스텀
-                  <Form.Control as="textarea" rows={1} style={{width:"250px"}}/>
+                  <Form.Control as="textarea" rows={1} style={{width:"250px", resize:"none"}}/>
                 }
                 className={styles.date_picker}
               />
@@ -76,7 +76,7 @@ function PointOverview() {
                 dateFormat="yyyy.MM.dd" // 시간 포맷 변경 
                 showPopperArrow={false}    // 화살표 변경
                 customInput={		  // 날짜 뜨는 인풋 커스텀
-                  <Form.Control as="textarea" rows={1} style={{width:"250px"}}/>
+                  <Form.Control as="textarea" rows={1} style={{width:"250px", resize:"none"}}/>
                 }
                 className={styles.date_picker}
               />
