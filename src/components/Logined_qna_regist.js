@@ -74,6 +74,7 @@ function Logined_qna_regist() {
 
             <div className={styles.registCancleBtn}>
                 <button
+                  // type="submit"
                   type="button"
                   className={`${styles.btn} ${styles.regist}`}
                   onClick={()=>{

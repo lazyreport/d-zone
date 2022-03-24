@@ -194,7 +194,8 @@ function Loginbf_pannel3() {
 
             <div className={styles.btnContainer}>
               <button
-                type="submit"
+                // type="submit"
+                type="button"
                 className={styles.btn}
                 onClick={() => {
                   inquiryRegist();
