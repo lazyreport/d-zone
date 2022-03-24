@@ -145,9 +145,6 @@
   margin: auto;
   padding-top:20px;
 }
-.resendTxt p{
-  padding-bottom: 30px;
-}
 
 .resendTxt p:last-child {
   color: #ff5907;
@@ -184,9 +181,7 @@
   margin: auto;
   padding-top:20px;
 }
-.confirmTxt p{
-  padding-bottom: 30px;
-}
+
 .confirmTxt p:last-child {
   color: #ff5907;
 }
