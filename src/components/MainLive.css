@@ -20,6 +20,7 @@
     text-align: left; 
     line-height: 1.45; 
     font-size: 20px;
+    padding-top: 30px;
 }
 .text-box-1{width: 60%; 
     float: left; 
@@ -120,12 +121,18 @@
     color: #fdb415;
     font-size: 30px;
     padding-bottom: 27px;
+    font-weight: bold;
 }
 
 .content3 h2 {
     font-size: 40px;
     font-weight: bold;
-    color: #333
+    color: #333;
+}
+
+.content3 p {
+    padding-top: 26px;
+    font-size: 18px;
 }
 
 .cont3-box ul {
@@ -275,6 +282,7 @@
     line-height: 1.5;
     padding-bottom: 70px;
     padding-top: 26px;
+    font-size: 18px;
 }
 
 .swiper {

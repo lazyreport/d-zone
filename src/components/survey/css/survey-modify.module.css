@@ -202,6 +202,9 @@ select option[value=""]:disabled {
   height: 52px;
   margin-right: 19px;
 }
+.saveBtn > span{
+  width: 42px;
+}
 .cancelBtn {
   background-color: #fff;
   border: 1px solid #333;
@@ -216,6 +219,9 @@ select option[value=""]:disabled {
   width: 162px;
   height: 52px;
   margin-bottom: 77px;
+}
+.cancelBtn > span{
+  width: 42px;
 }
 .fileupload a {
   color: #fff;

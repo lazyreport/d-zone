@@ -132,6 +132,7 @@
   height: 89px;
   background-color: #eee;
   display: flex;
+  padding-top:20px;
 }
 .resendTxt {
   width: 250px;
@@ -170,6 +171,7 @@
   height: 89px;
   background-color: #eee;
   display: flex;
+  padding-top:20px;
 }
 .confirmTxt {
   width: 350px;
