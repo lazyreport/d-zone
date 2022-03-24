@@ -24,7 +24,7 @@ function Join3() {
                 <p>회원가입이 완료되었습니다.</p>
                 <p>디지털존 회원이 되신 것을 진심으로 환영합니다.</p>
                 <div className={styles.btn_group}>
-                  <Link to="/" className={styles.complete_btn}>메인으로</Link>
+                  <Link to="/log-in" className={styles.complete_btn}>로그인 하기</Link>
                 </div>
               </div>
             </div>
