@@ -73,7 +73,10 @@
 .logined_home .tableBox .table {
   width: 100%;
   border-bottom: 1px solid #b1b1b1;
+  /* border-bottom: 1px solid #333; */
   border-collapse: collapse;
+  /* word-break: break-all; */
+  /* table-layout: fixed; */
 }
 .logined_home .tableBox .thead {
   height: 45px;
@@ -85,13 +88,13 @@
   border-right: 1px solid #fff;
   padding: 13px 0 15px 0;
 }
+.logined_home .tableBox .table .state {
+  width: 130px;
+}
 .logined_home .tableBox .th:last-child {
   border-right: none;
 }
 .logined_home .tableBox .tbody .tr {
-  border-bottom: 1px solid #333;
-}
-.logined_home .tableBox .tbody .tr:last-child {
   border-bottom: 1px solid #b1b1b1;
 }
 .logined_home .tableBox .tbody .td {
