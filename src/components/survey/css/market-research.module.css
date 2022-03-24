@@ -143,6 +143,7 @@
   align-items: center;
   vertical-align: middle;
   margin: auto;
+  padding-top: 10px;
 }
 
 .resendTxt p:last-child {
@@ -178,6 +179,7 @@
   align-items: center;
   vertical-align: middle;
   margin: auto;
+  padding-top: 10px;
 }
 
 .confirmTxt p:last-child {
