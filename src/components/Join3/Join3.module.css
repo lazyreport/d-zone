@@ -113,19 +113,20 @@
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  left: 60px;
+  left: 45px;
 }
 
 .contents_box_p {
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 0.8;
   margin-bottom: 20px;
   font-weight: bold;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  right: 55px;
+  right: 45px;
 }
 
 .contents_box-p p:first-child {

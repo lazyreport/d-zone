@@ -55,11 +55,11 @@ export const PanelSystem = ()=>{
                 <colgroup>
                     <col style={{width: "100px"}} />
                     <col style={{width: "100px"}} />
-                    <col style={{width: "150px"}} />
+                    <col style={{width: "180px"}} />
                     <col style={{width: "250px"}} />
-                    <col style={{width: "200px"}} />
-                    <col style={{width: "200px"}} />
-                    <col style={{width: "200px"}} />
+                    <col style={{width: "180px"}} />
+                    <col style={{width: "180px"}} />
+                    <col style={{width: "100px"}} />
                     <col style={{width: "120px"}} />
                 </colgroup>
             <thead>
