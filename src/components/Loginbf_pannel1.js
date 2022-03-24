@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 
 function Loginbf_pannel1() {
-  // 로그인 버튼 클릭 시
+  // 아이디 발송 클릭 시
   const login = () => {
     var loginForm = document.loginForm;
     var inputEmail = loginForm.inputEmail.value;
@@ -16,8 +16,15 @@ function Loginbf_pannel1() {
     } else {
       // loginForm.submit();
       alert("입력하신 이메일로 아이디가 발송 되었습니다.");
+      // gotoPage("/log-in")
     }
   };
+
+
+  // 버튼 클릭 시 페이지 이동
+  // const gotoPage = (pageName) => {
+  //   window.location.href(pageName)
+  // }
 
 
   // input 태그 onFocus

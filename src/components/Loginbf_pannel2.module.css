@@ -72,6 +72,9 @@
 .loginbf_pannel2 .col .codeBox::-webkit-inner-spin-button{
   -webkit-appearance: none;
 }
+.loginbf_pannel2 .codeRow .col .input{
+  -webkit-text-security: disc;
+}
 
 /* phoneRow & codeRow */
 .loginbf_pannel2 .phoneRow input::-webkit-outer-spin-button,

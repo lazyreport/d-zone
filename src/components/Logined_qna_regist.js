@@ -3,6 +3,7 @@ import Gnb from "./Gnb";
 import styles from "./Logined_qna_regist.module.css";
 import FadeIn from "react-fade-in"
 import { Link } from "react-router-dom";
+import LocationBar from "./LocationBar";
 
 function Logined_qna_regist() {
   // 문의신청
@@ -28,9 +29,7 @@ function Logined_qna_regist() {
           <div className={styles.qnaRegist}>
             <FadeIn>
             <div className={styles.pannelCategory}>
-              <h2 className={styles.pannelTitle}>
-                Q&A <span>{">"}</span> Q&A 게시판
-              </h2>
+              <LocationBar depth1="Q&A" depth2="Q&A 등록" />
             </div>
 
             <div className={styles.describe}>

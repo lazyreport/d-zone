@@ -150,7 +150,6 @@ function Loginbf_pannel2() {
                 // disabled
                 onClick={() => {
                   certifNum();
-                  // return false;
                 }}
               >
                 확인
